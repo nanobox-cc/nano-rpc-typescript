@@ -1,0 +1,16 @@
+{
+  "name": "@nanobox/nano-rpc-typescript",
+  "version": "1.0.0",
+  "description": "OpenAPI Nano RPC Typescript client",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kjetil Mehl",
+  "license": "MIT",
+  "devDependencies": {
+    "@nanobox/openapi-nano-spec": "^3.0.0",
+    "typescript": "^4.1.5"
+  }
+}
