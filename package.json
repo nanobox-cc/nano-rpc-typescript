@@ -1,16 +1,26 @@
 {
-  "name": "@nanobox/nano-rpc-typescript",
-  "version": "1.0.0",
-  "description": "OpenAPI Nano RPC Typescript client",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "openapi-generator-cli generate -g typescript-node -i ./node_modules/@nanobox/openapi-nano-spec/spec/openapi.yaml -o ./clients/typescript -c config-typescript.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Kjetil Mehl",
-  "license": "MIT",
-  "devDependencies": {
-    "@nanobox/openapi-nano-spec": "^3.0.0",
-    "@openapitools/openapi-generator-cli": "^2.1.23"
-  }
+    "name": "@nanobox/nano-rpc-typescript",
+    "version": "1.0.0",
+    "description": "NodeJS client for @nanobox/nano-rpc-typescript",
+    "repository": "GIT_USER_ID/GIT_REPO_ID",
+    "main": "dist/api.js",
+    "types": "dist/api.d.ts",
+    "scripts": {
+        "clean": "rm -Rf node_modules/ *.js",
+        "build": "tsc",
+        "test": "npm run build && node dist/client.js"
+    },
+    "author": "OpenAPI-Generator Contributors",
+    "license": "Unlicense",
+    "dependencies": {
+        "bluebird": "^3.5.0",
+        "request": "^2.81.0",
+        "@types/bluebird": "*",
+        "@types/request": "*",
+        "rewire": "^3.0.2"
+    },
+    "devDependencies": {
+        "typescript": "^2.4.2",
+        "@types/node": "8.10.34"
+    }
 }
