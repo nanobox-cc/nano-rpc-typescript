@@ -2,5 +2,6 @@
   "npmName": "@nanobox/nano-rpc-typescript",
   "npmVersion": "1.0.0",
   "snapshot": false,
-  "supportsES6": true
+  "supportsES6": true,
+  "platform": "node"
 }
