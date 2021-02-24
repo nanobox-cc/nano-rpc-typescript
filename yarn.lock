@@ -30,7 +30,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@nanobox/openapi-nano-spec@^3.0.0":
+"@nanobox/openapi-nano-spec@3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@nanobox/openapi-nano-spec/-/openapi-nano-spec-3.0.0.tgz#bcd330cd5711912849ea3af92971a1a1bafb82b1"
   integrity sha512-jD5fcozk0ZIOKb7xqZw7RevujGtHrFupxw/ucJFjN3+wEY2Zq5Foe7I//bVMn/P4UmhoVe8WOrOlWMOAWPU+Gw==
