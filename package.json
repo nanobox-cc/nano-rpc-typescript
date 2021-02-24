@@ -1,6 +1,6 @@
 {
   "name": "@nanobox/nano-rpc-typescript",
-  "version": "v3.0.2",
+  "version": "3.0.2",
   "description": "OpenAPI client for @nanobox/nano-rpc-typescript",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
