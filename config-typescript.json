@@ -3,5 +3,5 @@
   "npmVersion": "1.0.0",
   "snapshot": false,
   "supportsES6": true,
-  "platform": "node"
+  "platform": "browser"
 }
