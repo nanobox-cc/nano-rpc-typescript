@@ -1,5 +1,3 @@
-.gitignore
-.openapi-generator-ignore
 README.md
 apis/DebugApi.ts
 apis/NodeRPCsApi.ts
@@ -104,7 +102,6 @@ models/all.ts
 package.json
 rxjsStub.ts
 servers.ts
-tsconfig.json
 types/ObjectParamAPI.ts
 types/ObservableAPI.ts
 types/PromiseAPI.ts
