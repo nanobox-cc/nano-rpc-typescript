@@ -3,5 +3,6 @@
   "npmVersion": "1.0.0",
   "snapshot": false,
   "supportsES6": true,
-  "platform": "browser"
+  "platform": "browser",
+  "npmRepository": "https://github.com/nanobox-cc/nano-rpc-typescript"
 }
