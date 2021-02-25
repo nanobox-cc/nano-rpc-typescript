@@ -3,5 +3,6 @@
   "npmVersion": "3.0.3",
   "snapshot": false,
   "supportsES6": true,
-  "platform": "browser"
+  "platform": "browser",
+  "modelPropertyNaming": "original"
 }
