@@ -1,6 +1,6 @@
 {
   "npmName": "@nanobox/nano-rpc-typescript",
-  "npmVersion": "3.0.4",
+  "npmVersion": "3.0.5",
   "snapshot": false,
   "supportsES6": true,
   "platform": "browser",

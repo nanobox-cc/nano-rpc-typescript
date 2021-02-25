@@ -10,10 +10,11 @@
  * Do not edit the class manually.
  */
 
+import { PendingBlock } from './PendingBlock';
 import { HttpFile } from '../http/http';
 
 export class PendingResponse {
-    'blocks'?: Array<string>;
+    'blocks'?: { [key: string]: PendingBlock; };
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -21,7 +22,7 @@ export class PendingResponse {
         {
             "name": "blocks",
             "baseName": "blocks",
-            "type": "Array<string>",
+            "type": "{ [key: string]: PendingBlock; }",
             "format": ""
         }    ];
 

@@ -1,4 +1,4 @@
-## @nanobox/nano-rpc-typescript@3.0.4
+## @nanobox/nano-rpc-typescript@3.0.5
 
 This generator creates TypeScript/JavaScript client that utilizes fetch-api. 
 
@@ -21,7 +21,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install @nanobox/nano-rpc-typescript@3.0.4 --save
+npm install @nanobox/nano-rpc-typescript@3.0.5 --save
 ```
 
 _unPublished (not recommended):_
