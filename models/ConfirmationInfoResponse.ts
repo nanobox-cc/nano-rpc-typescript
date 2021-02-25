@@ -15,11 +15,11 @@ import { HttpFile } from '../http/http';
 
 export class ConfirmationInfoResponse {
     'announcements'?: string;
-    'lastWinner'?: string;
+    'last_winner'?: string;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'totalTally'?: number;
+    'total_tally'?: number;
     'blocks'?: { [key: string]: ConfirmationInfo; };
 
     static readonly discriminator: string | undefined = undefined;
@@ -32,13 +32,13 @@ export class ConfirmationInfoResponse {
             "format": ""
         },
         {
-            "name": "lastWinner",
+            "name": "last_winner",
             "baseName": "last_winner",
             "type": "string",
             "format": ""
         },
         {
-            "name": "totalTally",
+            "name": "total_tally",
             "baseName": "total_tally",
             "type": "number",
             "format": ""

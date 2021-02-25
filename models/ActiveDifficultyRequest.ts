@@ -18,7 +18,7 @@ export class ActiveDifficultyRequest {
     /**
     * Boolean, false by default. Also returns the trend of difficulty seen on the network as a list of multipliers. Sampling occurs every 16 to 36 seconds. The list is ordered such that the first value is the most recent sample. 
     */
-    'includeTrend'?: ModelBoolean;
+    'include_trend'?: ModelBoolean;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -30,7 +30,7 @@ export class ActiveDifficultyRequest {
             "format": ""
         },
         {
-            "name": "includeTrend",
+            "name": "include_trend",
             "baseName": "include_trend",
             "type": "ModelBoolean",
             "format": ""

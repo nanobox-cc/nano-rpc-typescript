@@ -13,13 +13,13 @@
 import { HttpFile } from '../http/http';
 
 export class AccountBlockCountResponse {
-    'blockCount'?: string;
+    'block_count'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "blockCount",
+            "name": "block_count",
             "baseName": "block_count",
             "type": "string",
             "format": ""

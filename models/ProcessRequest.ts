@@ -20,7 +20,7 @@ export class ProcessRequest {
     /**
     * Defaults to `\"false\"`. If `\"true\"`, `\"block\"` contains a JSON subtree instead of a JSON string.
     */
-    'jsonBlock'?: ModelBoolean;
+    'json_block'?: ModelBoolean;
     'block': BlockDataJson;
     'subtype'?: SubType;
 
@@ -34,7 +34,7 @@ export class ProcessRequest {
             "format": ""
         },
         {
-            "name": "jsonBlock",
+            "name": "json_block",
             "baseName": "json_block",
             "type": "ModelBoolean",
             "format": ""

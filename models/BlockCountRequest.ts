@@ -17,7 +17,7 @@ export class BlockCountRequest {
     /**
     * _enable_control required, version 19.0+_ Default \"false\". If \"true\", \"cemented\" in the response will contain the number of cemented blocks. 
     */
-    'includeCemented'?: boolean;
+    'include_cemented'?: boolean;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -29,7 +29,7 @@ export class BlockCountRequest {
             "format": ""
         },
         {
-            "name": "includeCemented",
+            "name": "include_cemented",
             "baseName": "include_cemented",
             "type": "boolean",
             "format": ""

@@ -17,8 +17,8 @@ export class BlockCountTypeResponse {
     'receive': string;
     'open': string;
     'change': string;
-    'stateV0': string;
-    'stateV1': string;
+    'state_v0': string;
+    'state_v1': string;
     'state': string;
 
     static readonly discriminator: string | undefined = undefined;
@@ -49,13 +49,13 @@ export class BlockCountTypeResponse {
             "format": ""
         },
         {
-            "name": "stateV0",
+            "name": "state_v0",
             "baseName": "state_v0",
             "type": "string",
             "format": ""
         },
         {
-            "name": "stateV1",
+            "name": "state_v1",
             "baseName": "state_v1",
             "type": "string",
             "format": ""

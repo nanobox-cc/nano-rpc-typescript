@@ -16,7 +16,7 @@ import { SubType } from './SubType';
 import { HttpFile } from '../http/http';
 
 export class BlockInfoResponse {
-    'blockAccount'?: string;
+    'block_account'?: string;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
@@ -26,7 +26,7 @@ export class BlockInfoResponse {
     */
     'balance'?: number;
     'height'?: string;
-    'localTimestamp'?: string;
+    'local_timestamp'?: string;
     'confirmed'?: ModelBoolean;
     'contents'?: BlockDataJson;
     'subType'?: SubType;
@@ -35,7 +35,7 @@ export class BlockInfoResponse {
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "blockAccount",
+            "name": "block_account",
             "baseName": "block_account",
             "type": "string",
             "format": ""
@@ -59,7 +59,7 @@ export class BlockInfoResponse {
             "format": ""
         },
         {
-            "name": "localTimestamp",
+            "name": "local_timestamp",
             "baseName": "local_timestamp",
             "type": "string",
             "format": ""

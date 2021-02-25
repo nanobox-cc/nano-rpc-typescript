@@ -105,10 +105,10 @@ export class PromiseDebugApi {
 
     /**
      * _version 19.0+_  Returns the hash of the block which is having the confirmation height set for, error otherwise. When a block is being confirmed, it must confirm all blocks in the chain below and iteratively follow all receive blocks. This can take a long time, so it can be useful to find which block was the original being confirmed. 
-     * @param confirmationHeightCurrentlyProcessingRequest 
+     * @param ConfirmationHeightCurrentlyProcessingRequest 
      */
-    public confirmationHeightCurrentlyProcessing(confirmationHeightCurrentlyProcessingRequest?: ConfirmationHeightCurrentlyProcessingRequest, options?: Configuration): Promise<ConfirmationHeightCurrentlyProcessingResponse> {
-    	const result = this.api.confirmationHeightCurrentlyProcessing(confirmationHeightCurrentlyProcessingRequest, options);
+    public confirmationHeightCurrentlyProcessing(ConfirmationHeightCurrentlyProcessingRequest?: ConfirmationHeightCurrentlyProcessingRequest, options?: Configuration): Promise<ConfirmationHeightCurrentlyProcessingResponse> {
+    	const result = this.api.confirmationHeightCurrentlyProcessing(ConfirmationHeightCurrentlyProcessingRequest, options);
         return result.toPromise();
     }
 	
@@ -134,307 +134,307 @@ export class PromiseNodeRPCsApi {
 
     /**
      * Returns how many RAW is owned and how many have not yet been received by **account** > This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountBalanceRequest 
+     * @param AccountBalanceRequest 
      */
-    public accountBalance(accountBalanceRequest?: AccountBalanceRequest, options?: Configuration): Promise<AccountBalanceResponse> {
-    	const result = this.api.accountBalance(accountBalanceRequest, options);
+    public accountBalance(AccountBalanceRequest?: AccountBalanceRequest, options?: Configuration): Promise<AccountBalanceResponse> {
+    	const result = this.api.accountBalance(AccountBalanceRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Get number of blocks for a specific account
-     * @param accountBlockCountRequest 
+     * @param AccountBlockCountRequest 
      */
-    public accountBlockCount(accountBlockCountRequest?: AccountBlockCountRequest, options?: Configuration): Promise<AccountBlockCountResponse> {
-    	const result = this.api.accountBlockCount(accountBlockCountRequest, options);
+    public accountBlockCount(AccountBlockCountRequest?: AccountBlockCountRequest, options?: Configuration): Promise<AccountBlockCountResponse> {
+    	const result = this.api.accountBlockCount(AccountBlockCountRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Get account for the public key
-     * @param accountGetRequest 
+     * @param AccountGetRequest 
      */
-    public accountGet(accountGetRequest?: AccountGetRequest, options?: Configuration): Promise<AccountGetResponse> {
-    	const result = this.api.accountGet(accountGetRequest, options);
+    public accountGet(AccountGetRequest?: AccountGetRequest, options?: Configuration): Promise<AccountGetResponse> {
+    	const result = this.api.accountGet(AccountGetRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Gets the account history. Reports send/receive information for an account. 
-     * @param accountHistoryRequest 
+     * @param AccountHistoryRequest 
      */
-    public accountHistory(accountHistoryRequest?: AccountHistoryRequest, options?: Configuration): Promise<AccountHistoryResponse> {
-    	const result = this.api.accountHistory(accountHistoryRequest, options);
+    public accountHistory(AccountHistoryRequest?: AccountHistoryRequest, options?: Configuration): Promise<AccountHistoryResponse> {
+    	const result = this.api.accountHistory(AccountHistoryRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count for **account**. Only works for accounts that have an entry on the ledger, will return _Account not found_ otherwise. 
-     * @param accountInfoRequest 
+     * @param AccountInfoRequest 
      */
-    public accountInfo(accountInfoRequest?: AccountInfoRequest, options?: Configuration): Promise<AccountInfoResponse> {
-    	const result = this.api.accountInfo(accountInfoRequest, options);
+    public accountInfo(AccountInfoRequest?: AccountInfoRequest, options?: Configuration): Promise<AccountInfoResponse> {
+    	const result = this.api.accountInfo(AccountInfoRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Get the public key for **account** 
-     * @param accountKeyRequest 
+     * @param AccountKeyRequest 
      */
-    public accountKey(accountKeyRequest?: AccountKeyRequest, options?: Configuration): Promise<AccountKeyResponse> {
-    	const result = this.api.accountKey(accountKeyRequest, options);
+    public accountKey(AccountKeyRequest?: AccountKeyRequest, options?: Configuration): Promise<AccountKeyResponse> {
+    	const result = this.api.accountKey(AccountKeyRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns the representative for **account** 
-     * @param accountRepresentativeRequest 
+     * @param AccountRepresentativeRequest 
      */
-    public accountRepresentative(accountRepresentativeRequest?: AccountRepresentativeRequest, options?: Configuration): Promise<AccountRepresentativeResponse> {
-    	const result = this.api.accountRepresentative(accountRepresentativeRequest, options);
+    public accountRepresentative(AccountRepresentativeRequest?: AccountRepresentativeRequest, options?: Configuration): Promise<AccountRepresentativeResponse> {
+    	const result = this.api.accountRepresentative(AccountRepresentativeRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns the voting weight for **account** 
-     * @param accountWeightRequest 
+     * @param AccountWeightRequest 
      */
-    public accountWeight(accountWeightRequest?: AccountWeightRequest, options?: Configuration): Promise<AccountWeightResponse> {
-    	const result = this.api.accountWeight(accountWeightRequest, options);
+    public accountWeight(AccountWeightRequest?: AccountWeightRequest, options?: Configuration): Promise<AccountWeightResponse> {
+    	const result = this.api.accountWeight(AccountWeightRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns how many RAW is owned and how many have not yet been received by **accounts list**  This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountsBalancesRequest 
+     * @param AccountsBalancesRequest 
      */
-    public accountsBalances(accountsBalancesRequest?: AccountsBalancesRequest, options?: Configuration): Promise<AccountsBalancesResponse> {
-    	const result = this.api.accountsBalances(accountsBalancesRequest, options);
+    public accountsBalances(AccountsBalancesRequest?: AccountsBalancesRequest, options?: Configuration): Promise<AccountsBalancesResponse> {
+    	const result = this.api.accountsBalances(AccountsBalancesRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns a list of pairs of account and block hash representing the head block for **accounts list**  This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountsFrontiersRequest 
+     * @param AccountsFrontiersRequest 
      */
-    public accountsFrontiers(accountsFrontiersRequest?: AccountsFrontiersRequest, options?: Configuration): Promise<AccountsFrontiersResponse> {
-    	const result = this.api.accountsFrontiers(accountsFrontiersRequest, options);
+    public accountsFrontiers(AccountsFrontiersRequest?: AccountsFrontiersRequest, options?: Configuration): Promise<AccountsFrontiersResponse> {
+    	const result = this.api.accountsFrontiers(AccountsFrontiersRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns a list of block hashes which have not yet been received by these accounts
-     * @param accountsPendingRequest 
+     * @param AccountsPendingRequest 
      */
-    public accountsPending(accountsPendingRequest?: AccountsPendingRequest, options?: Configuration): Promise<AccountsPendingResponse> {
-    	const result = this.api.accountsPending(accountsPendingRequest, options);
+    public accountsPending(AccountsPendingRequest?: AccountsPendingRequest, options?: Configuration): Promise<AccountsPendingResponse> {
+    	const result = this.api.accountsPending(AccountsPendingRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns the difficulty values (16 hexadecimal digits string, 64 bit) for the minimum required on the network (network_minimum) as well as the current active difficulty seen on the network (network_current, 5 minute trended average of adjusted difficulty seen on confirmed transactions) which can be used to perform rework for better prioritization of transaction processing. A multiplier of the network_current from the base difficulty of network_minimum is also provided for comparison. 
-     * @param activeDifficultyRequest 
+     * @param ActiveDifficultyRequest 
      */
-    public activeDifficulty(activeDifficultyRequest?: ActiveDifficultyRequest, options?: Configuration): Promise<ActiveDifficultyResponse> {
-    	const result = this.api.activeDifficulty(activeDifficultyRequest, options);
+    public activeDifficulty(ActiveDifficultyRequest?: ActiveDifficultyRequest, options?: Configuration): Promise<ActiveDifficultyResponse> {
+    	const result = this.api.activeDifficulty(ActiveDifficultyRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns how many raw are in the public supply 
-     * @param availableSupplyRequest 
+     * @param AvailableSupplyRequest 
      */
-    public availableSupply(availableSupplyRequest?: AvailableSupplyRequest, options?: Configuration): Promise<AvailableSupplyResponse> {
-    	const result = this.api.availableSupply(availableSupplyRequest, options);
+    public availableSupply(AvailableSupplyRequest?: AvailableSupplyRequest, options?: Configuration): Promise<AvailableSupplyResponse> {
+    	const result = this.api.availableSupply(AvailableSupplyRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns the account containing block 
-     * @param blockAccountRequest 
+     * @param BlockAccountRequest 
      */
-    public blockAccount(blockAccountRequest?: BlockAccountRequest, options?: Configuration): Promise<BlockAccountResponse> {
-    	const result = this.api.blockAccount(blockAccountRequest, options);
+    public blockAccount(BlockAccountRequest?: BlockAccountRequest, options?: Configuration): Promise<BlockAccountResponse> {
+    	const result = this.api.blockAccount(BlockAccountRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Request confirmation for **block** from known online representative nodes. Check results with confirmation history. 
-     * @param blockConfirmRequest 
+     * @param BlockConfirmRequest 
      */
-    public blockConfirm(blockConfirmRequest?: BlockConfirmRequest, options?: Configuration): Promise<BlockConfirmResponse> {
-    	const result = this.api.blockConfirm(blockConfirmRequest, options);
+    public blockConfirm(BlockConfirmRequest?: BlockConfirmRequest, options?: Configuration): Promise<BlockConfirmResponse> {
+    	const result = this.api.blockConfirm(BlockConfirmRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Reports the number of blocks in the ledger and unchecked synchronizing blocks. 
-     * @param blockCountRequest 
+     * @param BlockCountRequest 
      */
-    public blockCount(blockCountRequest?: BlockCountRequest, options?: Configuration): Promise<BlockCountResponse> {
-    	const result = this.api.blockCount(blockCountRequest, options);
+    public blockCount(BlockCountRequest?: BlockCountRequest, options?: Configuration): Promise<BlockCountResponse> {
+    	const result = this.api.blockCount(BlockCountRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Reports the number of blocks in the ledger by type (send, receive, open, change, state with version) 
-     * @param blockCountTypeRequest 
+     * @param BlockCountTypeRequest 
      */
-    public blockCountType(blockCountTypeRequest?: BlockCountTypeRequest, options?: Configuration): Promise<BlockCountTypeResponse> {
-    	const result = this.api.blockCountType(blockCountTypeRequest, options);
+    public blockCountType(BlockCountTypeRequest?: BlockCountTypeRequest, options?: Configuration): Promise<BlockCountTypeResponse> {
+    	const result = this.api.blockCountType(BlockCountTypeRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Creates a json representations of new block based on input data & signed with **private key** or **account** in **wallet**. Use for offline signing. 
-     * @param blockCreateRequest 
+     * @param BlockCreateRequest 
      */
-    public blockCreate(blockCreateRequest?: BlockCreateRequest, options?: Configuration): Promise<BlockCreateResponse> {
-    	const result = this.api.blockCreate(blockCreateRequest, options);
+    public blockCreate(BlockCreateRequest?: BlockCreateRequest, options?: Configuration): Promise<BlockCreateResponse> {
+    	const result = this.api.blockCreate(BlockCreateRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returning block hash for given block content. Using the optional **json_block** is recommended since v19.0. 
-     * @param blockHashRequest 
+     * @param BlockHashRequest 
      */
-    public blockHash(blockHashRequest?: BlockHashRequest, options?: Configuration): Promise<BlockHashResponse> {
-    	const result = this.api.blockHash(blockHashRequest, options);
+    public blockHash(BlockHashRequest?: BlockHashRequest, options?: Configuration): Promise<BlockHashResponse> {
+    	const result = this.api.blockHash(BlockHashRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Retrieves a json representation of the block in `contents` along with:  * _since version 18.0_: `block_account`, transaction `amount`, block `balance`, block `height` in account chain, block local modification `timestamp` * _since version 19.0_: Whether block was `confirmed`, `subtype` (for state blocks) of `send`, `receive`,  `change` or `epoch`  Using the optional `json_block` is recommended since v19.0. 
-     * @param blockInfoRequest 
+     * @param BlockInfoRequest 
      */
-    public blockInfo(blockInfoRequest?: BlockInfoRequest, options?: Configuration): Promise<BlockInfoResponse> {
-    	const result = this.api.blockInfo(blockInfoRequest, options);
+    public blockInfo(BlockInfoRequest?: BlockInfoRequest, options?: Configuration): Promise<BlockInfoResponse> {
+    	const result = this.api.blockInfo(BlockInfoRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Retrieves a json representations of **blocks**. 
-     * @param blocksRequest 
+     * @param BlocksRequest 
      */
-    public blocks(blocksRequest?: BlocksRequest, options?: Configuration): Promise<BlocksResponse> {
-    	const result = this.api.blocks(blocksRequest, options);
+    public blocks(BlocksRequest?: BlocksRequest, options?: Configuration): Promise<BlocksResponse> {
+    	const result = this.api.blocks(BlocksRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Retrieves a json representations of blocks in contents along with:  * _since version 18.0_: `block_account`, transaction `amount`, block `balance`, block `height` in account chain, block local modification  timestamp * _since version 19.0_: Whether block was `confirmed`, `subtype` (for state blocks) of `send`, `receive`, `change` or `epoch` 
-     * @param blocksInfoRequest 
+     * @param BlocksInfoRequest 
      */
-    public blocksInfo(blocksInfoRequest?: BlocksInfoRequest, options?: Configuration): Promise<BlocksInfoResponse> {
-    	const result = this.api.blocksInfo(blocksInfoRequest, options);
+    public blocksInfo(BlocksInfoRequest?: BlocksInfoRequest, options?: Configuration): Promise<BlocksInfoResponse> {
+    	const result = this.api.blocksInfo(BlocksInfoRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Initialize bootstrap to specific **IP address** and **port**. Not compatible with launch flag [--disable_legacy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_legacy_bootstrap) 
-     * @param bootstrapRequest 
+     * @param BootstrapRequest 
      */
-    public bootstrap(bootstrapRequest?: BootstrapRequest, options?: Configuration): Promise<BootstrapResponse> {
-    	const result = this.api.bootstrap(bootstrapRequest, options);
+    public bootstrap(BootstrapRequest?: BootstrapRequest, options?: Configuration): Promise<BootstrapResponse> {
+    	const result = this.api.bootstrap(BootstrapRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Initialize multi-connection bootstrap to random peers. Not compatible with launch flag [--disable_legacy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_legacy_bootstrap) 
-     * @param bootstrapAnyRequest 
+     * @param BootstrapAnyRequest 
      */
-    public bootstrapAny(bootstrapAnyRequest?: BootstrapAnyRequest, options?: Configuration): Promise<BootstrapAnyResponse> {
-    	const result = this.api.bootstrapAny(bootstrapAnyRequest, options);
+    public bootstrapAny(BootstrapAnyRequest?: BootstrapAnyRequest, options?: Configuration): Promise<BootstrapAnyResponse> {
+    	const result = this.api.bootstrapAny(BootstrapAnyRequest, options);
         return result.toPromise();
     }
 	
     /**
      * _version 17.0+_  Initialize lazy bootstrap with given block hash. Not compatible with launch flag [--disable_lazy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_lazy_bootstrap) 
-     * @param bootstrapLazyRequest 
+     * @param BootstrapLazyRequest 
      */
-    public bootstrapLazy(bootstrapLazyRequest?: BootstrapLazyRequest, options?: Configuration): Promise<BootstrapLazyResponse> {
-    	const result = this.api.bootstrapLazy(bootstrapLazyRequest, options);
+    public bootstrapLazy(BootstrapLazyRequest?: BootstrapLazyRequest, options?: Configuration): Promise<BootstrapLazyResponse> {
+    	const result = this.api.bootstrapLazy(BootstrapLazyRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns a consecutive list of block hashes in the account chain starting at **block** back to **count** (direction from frontier back to open block, from newer blocks to older). Will list all blocks back to the open block of this chain when count is set to \"-1\". The requested block hash is included in the answer. 
-     * @param chainRequest 
+     * @param ChainRequest 
      */
-    public chain(chainRequest?: ChainRequest, options?: Configuration): Promise<ChainResponse> {
-    	const result = this.api.chain(chainRequest, options);
+    public chain(ChainRequest?: ChainRequest, options?: Configuration): Promise<ChainResponse> {
+    	const result = this.api.chain(ChainRequest, options);
         return result.toPromise();
     }
 	
     /**
      * _version 16.0+_  Returns list of active elections roots (excluding stopped & aborted elections). Find info about specific root with confirmation_info  The roots provided are two parts and differ between the first account block and subsequent blocks:  * First account block (open): 0000000000000000000000000000000000000000000000000000000000000000 + account public key * Other blocks: previous hash + previous hash 
-     * @param confirmationActiveRequest 
+     * @param ConfirmationActiveRequest 
      */
-    public confirmationActive(confirmationActiveRequest?: ConfirmationActiveRequest, options?: Configuration): Promise<ConfirmationActiveResponse> {
-    	const result = this.api.confirmationActive(confirmationActiveRequest, options);
+    public confirmationActive(ConfirmationActiveRequest?: ConfirmationActiveRequest, options?: Configuration): Promise<ConfirmationActiveResponse> {
+    	const result = this.api.confirmationActive(ConfirmationActiveRequest, options);
         return result.toPromise();
     }
 	
     /**
      * _version 12.0+_ _duration, time, confirmation_stats: version 17.0+_  Returns hash, tally weight, election duration (in milliseconds), election confirmation timestamp for recent elections winners. Also returns stats: count of elections in history (limited to 2048) & average duration time  With version 19.0+ `confirmation_history_size` can be managed in [config.json](https://docs.nano.org/running-a-node/configuration/#example-file) to adjust the number of elections to be kept in history and returned by this call. Due to timings inside the node, the default 2048 limit will return all confirmations up to traffic levels of  approximately 56 confirmations/sec. To properly track levels above this, increase this value or use the confirmation subscription through the [websocket](https://docs.nano.org/integration-guides/advanced/#websocket-support) instead. 
-     * @param confirmationHistoryRequest 
+     * @param ConfirmationHistoryRequest 
      */
-    public confirmationHistory(confirmationHistoryRequest?: ConfirmationHistoryRequest, options?: Configuration): Promise<ConfirmationHistoryResponse> {
-    	const result = this.api.confirmationHistory(confirmationHistoryRequest, options);
+    public confirmationHistory(ConfirmationHistoryRequest?: ConfirmationHistoryRequest, options?: Configuration): Promise<ConfirmationHistoryResponse> {
+    	const result = this.api.confirmationHistory(ConfirmationHistoryRequest, options);
         return result.toPromise();
     }
 	
     /**
      * _version 16.0+_  Returns info about active election by *root*. Including announcements count, last winner (initially local ledger block), total tally of voted representatives, concurrent blocks with tally & block contents for each. Using the optional `json_block` is recommended since v19.0.  The roots provided are two parts and differ between the first account block and subsequent blocks:  * First account block (open): 0000000000000000000000000000000000000000000000000000000000000000 + account public key * Other blocks: previous hash + previous hash 
-     * @param confirmationInfoRequest 
+     * @param ConfirmationInfoRequest 
      */
-    public confirmationInfo(confirmationInfoRequest?: ConfirmationInfoRequest, options?: Configuration): Promise<ConfirmationInfoResponse> {
-    	const result = this.api.confirmationInfo(confirmationInfoRequest, options);
+    public confirmationInfo(ConfirmationInfoRequest?: ConfirmationInfoRequest, options?: Configuration): Promise<ConfirmationInfoResponse> {
+    	const result = this.api.confirmationInfo(ConfirmationInfoRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Generates an **adhoc random** keypair 
-     * @param keyCreateRequest 
+     * @param KeyCreateRequest 
      */
-    public keyCreate(keyCreateRequest?: KeyCreateRequest, options?: Configuration): Promise<KeyCreateResponse> {
-    	const result = this.api.keyCreate(keyCreateRequest, options);
+    public keyCreate(KeyCreateRequest?: KeyCreateRequest, options?: Configuration): Promise<KeyCreateResponse> {
+    	const result = this.api.keyCreate(KeyCreateRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Derive public key and account number from **private key** 
-     * @param keyExpandRequest 
+     * @param KeyExpandRequest 
      */
-    public keyExpand(keyExpandRequest?: KeyExpandRequest, options?: Configuration): Promise<KeyExpandResponse> {
-    	const result = this.api.keyExpand(keyExpandRequest, options);
+    public keyExpand(KeyExpandRequest?: KeyExpandRequest, options?: Configuration): Promise<KeyExpandResponse> {
+    	const result = this.api.keyExpand(KeyExpandRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Returns a list of block hashes which have not yet been received by this account.  **Optional `include_only_confirmed` recommended**:  By default this will return blocks not in active elections but unconfirmed (e.g., block was received but node was restarted, election was dropped, new ledger with reset confirmation height).  **To avoid potential issues related to these situations setting the include_only_confirmed = true is recommended for most use cases.** 
-     * @param pendingRequest 
+     * @param PendingRequest 
      */
-    public pending(pendingRequest?: PendingRequest, options?: Configuration): Promise<PendingResponse> {
-    	const result = this.api.pending(pendingRequest, options);
+    public pending(PendingRequest?: PendingRequest, options?: Configuration): Promise<PendingResponse> {
+    	const result = this.api.pending(PendingRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Publish block to the network
-     * @param processRequest 
+     * @param ProcessRequest 
      */
-    public process(processRequest?: ProcessRequest, options?: Configuration): Promise<ProcessResponse> {
-    	const result = this.api.process(processRequest, options);
+    public process(ProcessRequest?: ProcessRequest, options?: Configuration): Promise<ProcessResponse> {
+    	const result = this.api.process(ProcessRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Generates work for block. hash is the frontier of the account or in the case of an open block, the public key representation of the account which can be found with account_key 
-     * @param workGenerateRequest 
+     * @param WorkGenerateRequest 
      */
-    public workGenerate(workGenerateRequest?: WorkGenerateRequest, options?: Configuration): Promise<WorkGenerateResponse> {
-    	const result = this.api.workGenerate(workGenerateRequest, options);
+    public workGenerate(WorkGenerateRequest?: WorkGenerateRequest, options?: Configuration): Promise<WorkGenerateResponse> {
+    	const result = this.api.workGenerate(WorkGenerateRequest, options);
         return result.toPromise();
     }
 	
@@ -460,28 +460,28 @@ export class PromiseWalletApi {
 
     /**
      * Creates new accounts, insert next deterministic keys in wallet up to count
-     * @param accountsCreateRequest 
+     * @param AccountsCreateRequest 
      */
-    public accountsCreate(accountsCreateRequest?: AccountsCreateRequest, options?: Configuration): Promise<AccountsCreateResponse> {
-    	const result = this.api.accountsCreate(accountsCreateRequest, options);
+    public accountsCreate(AccountsCreateRequest?: AccountsCreateRequest, options?: Configuration): Promise<AccountsCreateResponse> {
+    	const result = this.api.accountsCreate(AccountsCreateRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Receive pending block for account in wallet
-     * @param receiveRequest 
+     * @param ReceiveRequest 
      */
-    public receive(receiveRequest?: ReceiveRequest, options?: Configuration): Promise<ReceiveResponse> {
-    	const result = this.api.receive(receiveRequest, options);
+    public receive(ReceiveRequest?: ReceiveRequest, options?: Configuration): Promise<ReceiveResponse> {
+    	const result = this.api.receive(ReceiveRequest, options);
         return result.toPromise();
     }
 	
     /**
      * Creates a new random wallet id
-     * @param walletCreateRequest 
+     * @param WalletCreateRequest 
      */
-    public walletCreate(walletCreateRequest?: WalletCreateRequest, options?: Configuration): Promise<WalletCreateResponse> {
-    	const result = this.api.walletCreate(walletCreateRequest, options);
+    public walletCreate(WalletCreateRequest?: WalletCreateRequest, options?: Configuration): Promise<WalletCreateResponse> {
+    	const result = this.api.walletCreate(WalletCreateRequest, options);
         return result.toPromise();
     }
 	

@@ -22,7 +22,7 @@ export class BlockDataJson {
     */
     'balance'?: number;
     'link'?: string;
-    'linkAsAccount'?: string;
+    'link_as_account'?: string;
     'signature'?: string;
     'work'?: string;
 
@@ -66,7 +66,7 @@ export class BlockDataJson {
             "format": ""
         },
         {
-            "name": "linkAsAccount",
+            "name": "link_as_account",
             "baseName": "link_as_account",
             "type": "string",
             "format": ""

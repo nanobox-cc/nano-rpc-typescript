@@ -19,7 +19,7 @@ export class BlockHashRequest {
     /**
     * Defaults to `\"false\"`. If `\"true\"`, `\"block\"` contains a JSON subtree instead of a JSON string.
     */
-    'jsonBlock'?: ModelBoolean;
+    'json_block'?: ModelBoolean;
     'block': BlockDataJson;
 
     static readonly discriminator: string | undefined = undefined;
@@ -32,7 +32,7 @@ export class BlockHashRequest {
             "format": ""
         },
         {
-            "name": "jsonBlock",
+            "name": "json_block",
             "baseName": "json_block",
             "type": "ModelBoolean",
             "format": ""

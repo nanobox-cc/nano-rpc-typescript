@@ -20,7 +20,7 @@ export class Block {
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
     'amount': number;
-    'localTimestamp': string;
+    'local_timestamp': string;
     'height': string;
     'hash': string;
 
@@ -46,7 +46,7 @@ export class Block {
             "format": ""
         },
         {
-            "name": "localTimestamp",
+            "name": "local_timestamp",
             "baseName": "local_timestamp",
             "type": "string",
             "format": ""

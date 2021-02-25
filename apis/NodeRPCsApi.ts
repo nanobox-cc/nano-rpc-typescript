@@ -82,9 +82,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 	
     /**
      * Returns how many RAW is owned and how many have not yet been received by **account** > This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountBalanceRequest 
+     * @param AccountBalanceRequest 
      */
-    public async accountBalance(accountBalanceRequest?: AccountBalanceRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountBalance(AccountBalanceRequest?: AccountBalanceRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -108,7 +108,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountBalanceRequest, "AccountBalanceRequest", ""),
+            ObjectSerializer.serialize(AccountBalanceRequest, "AccountBalanceRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -125,9 +125,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Get number of blocks for a specific account
-     * @param accountBlockCountRequest 
+     * @param AccountBlockCountRequest 
      */
-    public async accountBlockCount(accountBlockCountRequest?: AccountBlockCountRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountBlockCount(AccountBlockCountRequest?: AccountBlockCountRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -151,7 +151,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountBlockCountRequest, "AccountBlockCountRequest", ""),
+            ObjectSerializer.serialize(AccountBlockCountRequest, "AccountBlockCountRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -168,9 +168,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Get account for the public key
-     * @param accountGetRequest 
+     * @param AccountGetRequest 
      */
-    public async accountGet(accountGetRequest?: AccountGetRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountGet(AccountGetRequest?: AccountGetRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -194,7 +194,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountGetRequest, "AccountGetRequest", ""),
+            ObjectSerializer.serialize(AccountGetRequest, "AccountGetRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -211,9 +211,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Gets the account history. Reports send/receive information for an account. 
-     * @param accountHistoryRequest 
+     * @param AccountHistoryRequest 
      */
-    public async accountHistory(accountHistoryRequest?: AccountHistoryRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountHistory(AccountHistoryRequest?: AccountHistoryRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -237,7 +237,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountHistoryRequest, "AccountHistoryRequest", ""),
+            ObjectSerializer.serialize(AccountHistoryRequest, "AccountHistoryRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -254,9 +254,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count for **account**. Only works for accounts that have an entry on the ledger, will return _Account not found_ otherwise. 
-     * @param accountInfoRequest 
+     * @param AccountInfoRequest 
      */
-    public async accountInfo(accountInfoRequest?: AccountInfoRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountInfo(AccountInfoRequest?: AccountInfoRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -280,7 +280,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountInfoRequest, "AccountInfoRequest", ""),
+            ObjectSerializer.serialize(AccountInfoRequest, "AccountInfoRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -297,9 +297,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Get the public key for **account** 
-     * @param accountKeyRequest 
+     * @param AccountKeyRequest 
      */
-    public async accountKey(accountKeyRequest?: AccountKeyRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountKey(AccountKeyRequest?: AccountKeyRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -323,7 +323,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountKeyRequest, "AccountKeyRequest", ""),
+            ObjectSerializer.serialize(AccountKeyRequest, "AccountKeyRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -340,9 +340,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns the representative for **account** 
-     * @param accountRepresentativeRequest 
+     * @param AccountRepresentativeRequest 
      */
-    public async accountRepresentative(accountRepresentativeRequest?: AccountRepresentativeRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountRepresentative(AccountRepresentativeRequest?: AccountRepresentativeRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -366,7 +366,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountRepresentativeRequest, "AccountRepresentativeRequest", ""),
+            ObjectSerializer.serialize(AccountRepresentativeRequest, "AccountRepresentativeRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -383,9 +383,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns the voting weight for **account** 
-     * @param accountWeightRequest 
+     * @param AccountWeightRequest 
      */
-    public async accountWeight(accountWeightRequest?: AccountWeightRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountWeight(AccountWeightRequest?: AccountWeightRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -409,7 +409,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountWeightRequest, "AccountWeightRequest", ""),
+            ObjectSerializer.serialize(AccountWeightRequest, "AccountWeightRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -426,9 +426,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns how many RAW is owned and how many have not yet been received by **accounts list**  This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountsBalancesRequest 
+     * @param AccountsBalancesRequest 
      */
-    public async accountsBalances(accountsBalancesRequest?: AccountsBalancesRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountsBalances(AccountsBalancesRequest?: AccountsBalancesRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -452,7 +452,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountsBalancesRequest, "AccountsBalancesRequest", ""),
+            ObjectSerializer.serialize(AccountsBalancesRequest, "AccountsBalancesRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -469,9 +469,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns a list of pairs of account and block hash representing the head block for **accounts list**  This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountsFrontiersRequest 
+     * @param AccountsFrontiersRequest 
      */
-    public async accountsFrontiers(accountsFrontiersRequest?: AccountsFrontiersRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountsFrontiers(AccountsFrontiersRequest?: AccountsFrontiersRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -495,7 +495,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountsFrontiersRequest, "AccountsFrontiersRequest", ""),
+            ObjectSerializer.serialize(AccountsFrontiersRequest, "AccountsFrontiersRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -512,9 +512,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns a list of block hashes which have not yet been received by these accounts
-     * @param accountsPendingRequest 
+     * @param AccountsPendingRequest 
      */
-    public async accountsPending(accountsPendingRequest?: AccountsPendingRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountsPending(AccountsPendingRequest?: AccountsPendingRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -538,7 +538,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountsPendingRequest, "AccountsPendingRequest", ""),
+            ObjectSerializer.serialize(AccountsPendingRequest, "AccountsPendingRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -555,9 +555,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns the difficulty values (16 hexadecimal digits string, 64 bit) for the minimum required on the network (network_minimum) as well as the current active difficulty seen on the network (network_current, 5 minute trended average of adjusted difficulty seen on confirmed transactions) which can be used to perform rework for better prioritization of transaction processing. A multiplier of the network_current from the base difficulty of network_minimum is also provided for comparison. 
-     * @param activeDifficultyRequest 
+     * @param ActiveDifficultyRequest 
      */
-    public async activeDifficulty(activeDifficultyRequest?: ActiveDifficultyRequest, options?: Configuration): Promise<RequestContext> {
+    public async activeDifficulty(ActiveDifficultyRequest?: ActiveDifficultyRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -581,7 +581,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(activeDifficultyRequest, "ActiveDifficultyRequest", ""),
+            ObjectSerializer.serialize(ActiveDifficultyRequest, "ActiveDifficultyRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -598,9 +598,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns how many raw are in the public supply 
-     * @param availableSupplyRequest 
+     * @param AvailableSupplyRequest 
      */
-    public async availableSupply(availableSupplyRequest?: AvailableSupplyRequest, options?: Configuration): Promise<RequestContext> {
+    public async availableSupply(AvailableSupplyRequest?: AvailableSupplyRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -624,7 +624,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(availableSupplyRequest, "AvailableSupplyRequest", ""),
+            ObjectSerializer.serialize(AvailableSupplyRequest, "AvailableSupplyRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -641,9 +641,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns the account containing block 
-     * @param blockAccountRequest 
+     * @param BlockAccountRequest 
      */
-    public async blockAccount(blockAccountRequest?: BlockAccountRequest, options?: Configuration): Promise<RequestContext> {
+    public async blockAccount(BlockAccountRequest?: BlockAccountRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -667,7 +667,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blockAccountRequest, "BlockAccountRequest", ""),
+            ObjectSerializer.serialize(BlockAccountRequest, "BlockAccountRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -684,9 +684,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Request confirmation for **block** from known online representative nodes. Check results with confirmation history. 
-     * @param blockConfirmRequest 
+     * @param BlockConfirmRequest 
      */
-    public async blockConfirm(blockConfirmRequest?: BlockConfirmRequest, options?: Configuration): Promise<RequestContext> {
+    public async blockConfirm(BlockConfirmRequest?: BlockConfirmRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -710,7 +710,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blockConfirmRequest, "BlockConfirmRequest", ""),
+            ObjectSerializer.serialize(BlockConfirmRequest, "BlockConfirmRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -727,9 +727,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Reports the number of blocks in the ledger and unchecked synchronizing blocks. 
-     * @param blockCountRequest 
+     * @param BlockCountRequest 
      */
-    public async blockCount(blockCountRequest?: BlockCountRequest, options?: Configuration): Promise<RequestContext> {
+    public async blockCount(BlockCountRequest?: BlockCountRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -753,7 +753,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blockCountRequest, "BlockCountRequest", ""),
+            ObjectSerializer.serialize(BlockCountRequest, "BlockCountRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -770,9 +770,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Reports the number of blocks in the ledger by type (send, receive, open, change, state with version) 
-     * @param blockCountTypeRequest 
+     * @param BlockCountTypeRequest 
      */
-    public async blockCountType(blockCountTypeRequest?: BlockCountTypeRequest, options?: Configuration): Promise<RequestContext> {
+    public async blockCountType(BlockCountTypeRequest?: BlockCountTypeRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -796,7 +796,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blockCountTypeRequest, "BlockCountTypeRequest", ""),
+            ObjectSerializer.serialize(BlockCountTypeRequest, "BlockCountTypeRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -813,9 +813,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Creates a json representations of new block based on input data & signed with **private key** or **account** in **wallet**. Use for offline signing. 
-     * @param blockCreateRequest 
+     * @param BlockCreateRequest 
      */
-    public async blockCreate(blockCreateRequest?: BlockCreateRequest, options?: Configuration): Promise<RequestContext> {
+    public async blockCreate(BlockCreateRequest?: BlockCreateRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -839,7 +839,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blockCreateRequest, "BlockCreateRequest", ""),
+            ObjectSerializer.serialize(BlockCreateRequest, "BlockCreateRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -856,9 +856,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returning block hash for given block content. Using the optional **json_block** is recommended since v19.0. 
-     * @param blockHashRequest 
+     * @param BlockHashRequest 
      */
-    public async blockHash(blockHashRequest?: BlockHashRequest, options?: Configuration): Promise<RequestContext> {
+    public async blockHash(BlockHashRequest?: BlockHashRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -882,7 +882,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blockHashRequest, "BlockHashRequest", ""),
+            ObjectSerializer.serialize(BlockHashRequest, "BlockHashRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -899,9 +899,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Retrieves a json representation of the block in `contents` along with:  * _since version 18.0_: `block_account`, transaction `amount`, block `balance`, block `height` in account chain, block local modification `timestamp` * _since version 19.0_: Whether block was `confirmed`, `subtype` (for state blocks) of `send`, `receive`,  `change` or `epoch`  Using the optional `json_block` is recommended since v19.0. 
-     * @param blockInfoRequest 
+     * @param BlockInfoRequest 
      */
-    public async blockInfo(blockInfoRequest?: BlockInfoRequest, options?: Configuration): Promise<RequestContext> {
+    public async blockInfo(BlockInfoRequest?: BlockInfoRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -925,7 +925,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blockInfoRequest, "BlockInfoRequest", ""),
+            ObjectSerializer.serialize(BlockInfoRequest, "BlockInfoRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -942,9 +942,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Retrieves a json representations of **blocks**. 
-     * @param blocksRequest 
+     * @param BlocksRequest 
      */
-    public async blocks(blocksRequest?: BlocksRequest, options?: Configuration): Promise<RequestContext> {
+    public async blocks(BlocksRequest?: BlocksRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -968,7 +968,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blocksRequest, "BlocksRequest", ""),
+            ObjectSerializer.serialize(BlocksRequest, "BlocksRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -985,9 +985,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Retrieves a json representations of blocks in contents along with:  * _since version 18.0_: `block_account`, transaction `amount`, block `balance`, block `height` in account chain, block local modification  timestamp * _since version 19.0_: Whether block was `confirmed`, `subtype` (for state blocks) of `send`, `receive`, `change` or `epoch` 
-     * @param blocksInfoRequest 
+     * @param BlocksInfoRequest 
      */
-    public async blocksInfo(blocksInfoRequest?: BlocksInfoRequest, options?: Configuration): Promise<RequestContext> {
+    public async blocksInfo(BlocksInfoRequest?: BlocksInfoRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1011,7 +1011,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(blocksInfoRequest, "BlocksInfoRequest", ""),
+            ObjectSerializer.serialize(BlocksInfoRequest, "BlocksInfoRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1028,9 +1028,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Initialize bootstrap to specific **IP address** and **port**. Not compatible with launch flag [--disable_legacy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_legacy_bootstrap) 
-     * @param bootstrapRequest 
+     * @param BootstrapRequest 
      */
-    public async bootstrap(bootstrapRequest?: BootstrapRequest, options?: Configuration): Promise<RequestContext> {
+    public async bootstrap(BootstrapRequest?: BootstrapRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1054,7 +1054,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(bootstrapRequest, "BootstrapRequest", ""),
+            ObjectSerializer.serialize(BootstrapRequest, "BootstrapRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1071,9 +1071,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Initialize multi-connection bootstrap to random peers. Not compatible with launch flag [--disable_legacy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_legacy_bootstrap) 
-     * @param bootstrapAnyRequest 
+     * @param BootstrapAnyRequest 
      */
-    public async bootstrapAny(bootstrapAnyRequest?: BootstrapAnyRequest, options?: Configuration): Promise<RequestContext> {
+    public async bootstrapAny(BootstrapAnyRequest?: BootstrapAnyRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1097,7 +1097,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(bootstrapAnyRequest, "BootstrapAnyRequest", ""),
+            ObjectSerializer.serialize(BootstrapAnyRequest, "BootstrapAnyRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1114,9 +1114,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * _version 17.0+_  Initialize lazy bootstrap with given block hash. Not compatible with launch flag [--disable_lazy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_lazy_bootstrap) 
-     * @param bootstrapLazyRequest 
+     * @param BootstrapLazyRequest 
      */
-    public async bootstrapLazy(bootstrapLazyRequest?: BootstrapLazyRequest, options?: Configuration): Promise<RequestContext> {
+    public async bootstrapLazy(BootstrapLazyRequest?: BootstrapLazyRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1140,7 +1140,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(bootstrapLazyRequest, "BootstrapLazyRequest", ""),
+            ObjectSerializer.serialize(BootstrapLazyRequest, "BootstrapLazyRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1157,9 +1157,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns a consecutive list of block hashes in the account chain starting at **block** back to **count** (direction from frontier back to open block, from newer blocks to older). Will list all blocks back to the open block of this chain when count is set to \"-1\". The requested block hash is included in the answer. 
-     * @param chainRequest 
+     * @param ChainRequest 
      */
-    public async chain(chainRequest?: ChainRequest, options?: Configuration): Promise<RequestContext> {
+    public async chain(ChainRequest?: ChainRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1183,7 +1183,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(chainRequest, "ChainRequest", ""),
+            ObjectSerializer.serialize(ChainRequest, "ChainRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1200,9 +1200,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * _version 16.0+_  Returns list of active elections roots (excluding stopped & aborted elections). Find info about specific root with confirmation_info  The roots provided are two parts and differ between the first account block and subsequent blocks:  * First account block (open): 0000000000000000000000000000000000000000000000000000000000000000 + account public key * Other blocks: previous hash + previous hash 
-     * @param confirmationActiveRequest 
+     * @param ConfirmationActiveRequest 
      */
-    public async confirmationActive(confirmationActiveRequest?: ConfirmationActiveRequest, options?: Configuration): Promise<RequestContext> {
+    public async confirmationActive(ConfirmationActiveRequest?: ConfirmationActiveRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1226,7 +1226,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(confirmationActiveRequest, "ConfirmationActiveRequest", ""),
+            ObjectSerializer.serialize(ConfirmationActiveRequest, "ConfirmationActiveRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1243,9 +1243,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * _version 12.0+_ _duration, time, confirmation_stats: version 17.0+_  Returns hash, tally weight, election duration (in milliseconds), election confirmation timestamp for recent elections winners. Also returns stats: count of elections in history (limited to 2048) & average duration time  With version 19.0+ `confirmation_history_size` can be managed in [config.json](https://docs.nano.org/running-a-node/configuration/#example-file) to adjust the number of elections to be kept in history and returned by this call. Due to timings inside the node, the default 2048 limit will return all confirmations up to traffic levels of  approximately 56 confirmations/sec. To properly track levels above this, increase this value or use the confirmation subscription through the [websocket](https://docs.nano.org/integration-guides/advanced/#websocket-support) instead. 
-     * @param confirmationHistoryRequest 
+     * @param ConfirmationHistoryRequest 
      */
-    public async confirmationHistory(confirmationHistoryRequest?: ConfirmationHistoryRequest, options?: Configuration): Promise<RequestContext> {
+    public async confirmationHistory(ConfirmationHistoryRequest?: ConfirmationHistoryRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1269,7 +1269,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(confirmationHistoryRequest, "ConfirmationHistoryRequest", ""),
+            ObjectSerializer.serialize(ConfirmationHistoryRequest, "ConfirmationHistoryRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1286,9 +1286,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * _version 16.0+_  Returns info about active election by *root*. Including announcements count, last winner (initially local ledger block), total tally of voted representatives, concurrent blocks with tally & block contents for each. Using the optional `json_block` is recommended since v19.0.  The roots provided are two parts and differ between the first account block and subsequent blocks:  * First account block (open): 0000000000000000000000000000000000000000000000000000000000000000 + account public key * Other blocks: previous hash + previous hash 
-     * @param confirmationInfoRequest 
+     * @param ConfirmationInfoRequest 
      */
-    public async confirmationInfo(confirmationInfoRequest?: ConfirmationInfoRequest, options?: Configuration): Promise<RequestContext> {
+    public async confirmationInfo(ConfirmationInfoRequest?: ConfirmationInfoRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1312,7 +1312,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(confirmationInfoRequest, "ConfirmationInfoRequest", ""),
+            ObjectSerializer.serialize(ConfirmationInfoRequest, "ConfirmationInfoRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1329,9 +1329,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Generates an **adhoc random** keypair 
-     * @param keyCreateRequest 
+     * @param KeyCreateRequest 
      */
-    public async keyCreate(keyCreateRequest?: KeyCreateRequest, options?: Configuration): Promise<RequestContext> {
+    public async keyCreate(KeyCreateRequest?: KeyCreateRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1355,7 +1355,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(keyCreateRequest, "KeyCreateRequest", ""),
+            ObjectSerializer.serialize(KeyCreateRequest, "KeyCreateRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1372,9 +1372,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Derive public key and account number from **private key** 
-     * @param keyExpandRequest 
+     * @param KeyExpandRequest 
      */
-    public async keyExpand(keyExpandRequest?: KeyExpandRequest, options?: Configuration): Promise<RequestContext> {
+    public async keyExpand(KeyExpandRequest?: KeyExpandRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1398,7 +1398,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(keyExpandRequest, "KeyExpandRequest", ""),
+            ObjectSerializer.serialize(KeyExpandRequest, "KeyExpandRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1415,9 +1415,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Returns a list of block hashes which have not yet been received by this account.  **Optional `include_only_confirmed` recommended**:  By default this will return blocks not in active elections but unconfirmed (e.g., block was received but node was restarted, election was dropped, new ledger with reset confirmation height).  **To avoid potential issues related to these situations setting the include_only_confirmed = true is recommended for most use cases.** 
-     * @param pendingRequest 
+     * @param PendingRequest 
      */
-    public async pending(pendingRequest?: PendingRequest, options?: Configuration): Promise<RequestContext> {
+    public async pending(PendingRequest?: PendingRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1441,7 +1441,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(pendingRequest, "PendingRequest", ""),
+            ObjectSerializer.serialize(PendingRequest, "PendingRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1458,9 +1458,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Publish block to the network
-     * @param processRequest 
+     * @param ProcessRequest 
      */
-    public async process(processRequest?: ProcessRequest, options?: Configuration): Promise<RequestContext> {
+    public async process(ProcessRequest?: ProcessRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1484,7 +1484,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(processRequest, "ProcessRequest", ""),
+            ObjectSerializer.serialize(ProcessRequest, "ProcessRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -1501,9 +1501,9 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Generates work for block. hash is the frontier of the account or in the case of an open block, the public key representation of the account which can be found with account_key 
-     * @param workGenerateRequest 
+     * @param WorkGenerateRequest 
      */
-    public async workGenerate(workGenerateRequest?: WorkGenerateRequest, options?: Configuration): Promise<RequestContext> {
+    public async workGenerate(WorkGenerateRequest?: WorkGenerateRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -1527,7 +1527,7 @@ export class NodeRPCsApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(workGenerateRequest, "WorkGenerateRequest", ""),
+            ObjectSerializer.serialize(WorkGenerateRequest, "WorkGenerateRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);

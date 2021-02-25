@@ -14,16 +14,16 @@ import { HttpFile } from '../http/http';
 
 export class AccountInfoResponse {
     'frontier': string;
-    'openBlock': string;
-    'representativeBlock': string;
+    'open_block': string;
+    'representative_block': string;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
     'balance': number;
-    'modifiedTimestamp': string;
-    'blockCount': string;
-    'confirmationHeight': string;
-    'accountVersion': string;
+    'modified_timestamp': string;
+    'block_count': string;
+    'confirmation_height': string;
+    'account_version': string;
     'representative'?: string;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
@@ -44,13 +44,13 @@ export class AccountInfoResponse {
             "format": ""
         },
         {
-            "name": "openBlock",
+            "name": "open_block",
             "baseName": "open_block",
             "type": "string",
             "format": ""
         },
         {
-            "name": "representativeBlock",
+            "name": "representative_block",
             "baseName": "representative_block",
             "type": "string",
             "format": ""
@@ -62,25 +62,25 @@ export class AccountInfoResponse {
             "format": ""
         },
         {
-            "name": "modifiedTimestamp",
+            "name": "modified_timestamp",
             "baseName": "modified_timestamp",
             "type": "string",
             "format": ""
         },
         {
-            "name": "blockCount",
+            "name": "block_count",
             "baseName": "block_count",
             "type": "string",
             "format": ""
         },
         {
-            "name": "confirmationHeight",
+            "name": "confirmation_height",
             "baseName": "confirmation_height",
             "type": "string",
             "format": ""
         },
         {
-            "name": "accountVersion",
+            "name": "account_version",
             "baseName": "account_version",
             "type": "string",
             "format": ""

@@ -13,21 +13,21 @@
 import { HttpFile } from '../http/http';
 
 export class ActiveDifficultyResponse {
-    'networkMinimum'?: string;
-    'networkCurrent'?: string;
+    'network_minimum'?: string;
+    'network_current'?: string;
     'multiplier'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "networkMinimum",
+            "name": "network_minimum",
             "baseName": "network_minimum",
             "type": "string",
             "format": ""
         },
         {
-            "name": "networkCurrent",
+            "name": "network_current",
             "baseName": "network_current",
             "type": "string",
             "format": ""

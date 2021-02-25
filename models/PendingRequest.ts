@@ -24,7 +24,7 @@ export class PendingRequest {
     /**
     * _version 19.0+_  Boolean, false by default. Only returns block which have their confirmation height set or are undergoing confirmation height processing. 
     */
-    'includeOnlyConfirmed'?: ModelBoolean;
+    'include_only_confirmed'?: ModelBoolean;
     /**
     * _version 19.0+_  Boolean, false by default. Returns a list of pending block hashes with amount and source accounts 
     */
@@ -58,7 +58,7 @@ export class PendingRequest {
             "format": ""
         },
         {
-            "name": "includeOnlyConfirmed",
+            "name": "include_only_confirmed",
             "baseName": "include_only_confirmed",
             "type": "ModelBoolean",
             "format": ""

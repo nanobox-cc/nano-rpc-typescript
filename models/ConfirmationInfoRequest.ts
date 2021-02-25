@@ -18,7 +18,7 @@ export class ConfirmationInfoRequest {
     /**
     * Defaults to `\"false\"`. If `\"true\"`, `\"contents\"` contains a JSON subtree instead of a JSON string.
     */
-    'jsonBlock'?: ModelBoolean;
+    'json_block'?: ModelBoolean;
     /**
     * Defaults to `\"true\"`. If `\"false\"`, disables contents for each block.
     */
@@ -38,7 +38,7 @@ export class ConfirmationInfoRequest {
             "format": ""
         },
         {
-            "name": "jsonBlock",
+            "name": "json_block",
             "baseName": "json_block",
             "type": "ModelBoolean",
             "format": ""

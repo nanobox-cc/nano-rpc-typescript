@@ -98,7 +98,7 @@ export interface DebugApiConfirmationHeightCurrentlyProcessingRequest {
      * @type ConfirmationHeightCurrentlyProcessingRequest
      * @memberof DebugApiconfirmationHeightCurrentlyProcessing
      */
-    confirmationHeightCurrentlyProcessingRequest?: ConfirmationHeightCurrentlyProcessingRequest
+    ConfirmationHeightCurrentlyProcessingRequest?: ConfirmationHeightCurrentlyProcessingRequest
 }
 
 
@@ -114,7 +114,7 @@ export class ObjectDebugApi {
      * @param param the request object
      */
     public confirmationHeightCurrentlyProcessing(param: DebugApiConfirmationHeightCurrentlyProcessingRequest, options?: Configuration): Promise<ConfirmationHeightCurrentlyProcessingResponse> {
-        return this.api.confirmationHeightCurrentlyProcessing(param.confirmationHeightCurrentlyProcessingRequest,  options).toPromise();
+        return this.api.confirmationHeightCurrentlyProcessing(param.ConfirmationHeightCurrentlyProcessingRequest,  options).toPromise();
     }
 	
 
@@ -132,7 +132,7 @@ export interface NodeRPCsApiAccountBalanceRequest {
      * @type AccountBalanceRequest
      * @memberof NodeRPCsApiaccountBalance
      */
-    accountBalanceRequest?: AccountBalanceRequest
+    AccountBalanceRequest?: AccountBalanceRequest
 }
 
 export interface NodeRPCsApiAccountBlockCountRequest {
@@ -141,7 +141,7 @@ export interface NodeRPCsApiAccountBlockCountRequest {
      * @type AccountBlockCountRequest
      * @memberof NodeRPCsApiaccountBlockCount
      */
-    accountBlockCountRequest?: AccountBlockCountRequest
+    AccountBlockCountRequest?: AccountBlockCountRequest
 }
 
 export interface NodeRPCsApiAccountGetRequest {
@@ -150,7 +150,7 @@ export interface NodeRPCsApiAccountGetRequest {
      * @type AccountGetRequest
      * @memberof NodeRPCsApiaccountGet
      */
-    accountGetRequest?: AccountGetRequest
+    AccountGetRequest?: AccountGetRequest
 }
 
 export interface NodeRPCsApiAccountHistoryRequest {
@@ -159,7 +159,7 @@ export interface NodeRPCsApiAccountHistoryRequest {
      * @type AccountHistoryRequest
      * @memberof NodeRPCsApiaccountHistory
      */
-    accountHistoryRequest?: AccountHistoryRequest
+    AccountHistoryRequest?: AccountHistoryRequest
 }
 
 export interface NodeRPCsApiAccountInfoRequest {
@@ -168,7 +168,7 @@ export interface NodeRPCsApiAccountInfoRequest {
      * @type AccountInfoRequest
      * @memberof NodeRPCsApiaccountInfo
      */
-    accountInfoRequest?: AccountInfoRequest
+    AccountInfoRequest?: AccountInfoRequest
 }
 
 export interface NodeRPCsApiAccountKeyRequest {
@@ -177,7 +177,7 @@ export interface NodeRPCsApiAccountKeyRequest {
      * @type AccountKeyRequest
      * @memberof NodeRPCsApiaccountKey
      */
-    accountKeyRequest?: AccountKeyRequest
+    AccountKeyRequest?: AccountKeyRequest
 }
 
 export interface NodeRPCsApiAccountRepresentativeRequest {
@@ -186,7 +186,7 @@ export interface NodeRPCsApiAccountRepresentativeRequest {
      * @type AccountRepresentativeRequest
      * @memberof NodeRPCsApiaccountRepresentative
      */
-    accountRepresentativeRequest?: AccountRepresentativeRequest
+    AccountRepresentativeRequest?: AccountRepresentativeRequest
 }
 
 export interface NodeRPCsApiAccountWeightRequest {
@@ -195,7 +195,7 @@ export interface NodeRPCsApiAccountWeightRequest {
      * @type AccountWeightRequest
      * @memberof NodeRPCsApiaccountWeight
      */
-    accountWeightRequest?: AccountWeightRequest
+    AccountWeightRequest?: AccountWeightRequest
 }
 
 export interface NodeRPCsApiAccountsBalancesRequest {
@@ -204,7 +204,7 @@ export interface NodeRPCsApiAccountsBalancesRequest {
      * @type AccountsBalancesRequest
      * @memberof NodeRPCsApiaccountsBalances
      */
-    accountsBalancesRequest?: AccountsBalancesRequest
+    AccountsBalancesRequest?: AccountsBalancesRequest
 }
 
 export interface NodeRPCsApiAccountsFrontiersRequest {
@@ -213,7 +213,7 @@ export interface NodeRPCsApiAccountsFrontiersRequest {
      * @type AccountsFrontiersRequest
      * @memberof NodeRPCsApiaccountsFrontiers
      */
-    accountsFrontiersRequest?: AccountsFrontiersRequest
+    AccountsFrontiersRequest?: AccountsFrontiersRequest
 }
 
 export interface NodeRPCsApiAccountsPendingRequest {
@@ -222,7 +222,7 @@ export interface NodeRPCsApiAccountsPendingRequest {
      * @type AccountsPendingRequest
      * @memberof NodeRPCsApiaccountsPending
      */
-    accountsPendingRequest?: AccountsPendingRequest
+    AccountsPendingRequest?: AccountsPendingRequest
 }
 
 export interface NodeRPCsApiActiveDifficultyRequest {
@@ -231,7 +231,7 @@ export interface NodeRPCsApiActiveDifficultyRequest {
      * @type ActiveDifficultyRequest
      * @memberof NodeRPCsApiactiveDifficulty
      */
-    activeDifficultyRequest?: ActiveDifficultyRequest
+    ActiveDifficultyRequest?: ActiveDifficultyRequest
 }
 
 export interface NodeRPCsApiAvailableSupplyRequest {
@@ -240,7 +240,7 @@ export interface NodeRPCsApiAvailableSupplyRequest {
      * @type AvailableSupplyRequest
      * @memberof NodeRPCsApiavailableSupply
      */
-    availableSupplyRequest?: AvailableSupplyRequest
+    AvailableSupplyRequest?: AvailableSupplyRequest
 }
 
 export interface NodeRPCsApiBlockAccountRequest {
@@ -249,7 +249,7 @@ export interface NodeRPCsApiBlockAccountRequest {
      * @type BlockAccountRequest
      * @memberof NodeRPCsApiblockAccount
      */
-    blockAccountRequest?: BlockAccountRequest
+    BlockAccountRequest?: BlockAccountRequest
 }
 
 export interface NodeRPCsApiBlockConfirmRequest {
@@ -258,7 +258,7 @@ export interface NodeRPCsApiBlockConfirmRequest {
      * @type BlockConfirmRequest
      * @memberof NodeRPCsApiblockConfirm
      */
-    blockConfirmRequest?: BlockConfirmRequest
+    BlockConfirmRequest?: BlockConfirmRequest
 }
 
 export interface NodeRPCsApiBlockCountRequest {
@@ -267,7 +267,7 @@ export interface NodeRPCsApiBlockCountRequest {
      * @type BlockCountRequest
      * @memberof NodeRPCsApiblockCount
      */
-    blockCountRequest?: BlockCountRequest
+    BlockCountRequest?: BlockCountRequest
 }
 
 export interface NodeRPCsApiBlockCountTypeRequest {
@@ -276,7 +276,7 @@ export interface NodeRPCsApiBlockCountTypeRequest {
      * @type BlockCountTypeRequest
      * @memberof NodeRPCsApiblockCountType
      */
-    blockCountTypeRequest?: BlockCountTypeRequest
+    BlockCountTypeRequest?: BlockCountTypeRequest
 }
 
 export interface NodeRPCsApiBlockCreateRequest {
@@ -285,7 +285,7 @@ export interface NodeRPCsApiBlockCreateRequest {
      * @type BlockCreateRequest
      * @memberof NodeRPCsApiblockCreate
      */
-    blockCreateRequest?: BlockCreateRequest
+    BlockCreateRequest?: BlockCreateRequest
 }
 
 export interface NodeRPCsApiBlockHashRequest {
@@ -294,7 +294,7 @@ export interface NodeRPCsApiBlockHashRequest {
      * @type BlockHashRequest
      * @memberof NodeRPCsApiblockHash
      */
-    blockHashRequest?: BlockHashRequest
+    BlockHashRequest?: BlockHashRequest
 }
 
 export interface NodeRPCsApiBlockInfoRequest {
@@ -303,7 +303,7 @@ export interface NodeRPCsApiBlockInfoRequest {
      * @type BlockInfoRequest
      * @memberof NodeRPCsApiblockInfo
      */
-    blockInfoRequest?: BlockInfoRequest
+    BlockInfoRequest?: BlockInfoRequest
 }
 
 export interface NodeRPCsApiBlocksRequest {
@@ -312,7 +312,7 @@ export interface NodeRPCsApiBlocksRequest {
      * @type BlocksRequest
      * @memberof NodeRPCsApiblocks
      */
-    blocksRequest?: BlocksRequest
+    BlocksRequest?: BlocksRequest
 }
 
 export interface NodeRPCsApiBlocksInfoRequest {
@@ -321,7 +321,7 @@ export interface NodeRPCsApiBlocksInfoRequest {
      * @type BlocksInfoRequest
      * @memberof NodeRPCsApiblocksInfo
      */
-    blocksInfoRequest?: BlocksInfoRequest
+    BlocksInfoRequest?: BlocksInfoRequest
 }
 
 export interface NodeRPCsApiBootstrapRequest {
@@ -330,7 +330,7 @@ export interface NodeRPCsApiBootstrapRequest {
      * @type BootstrapRequest
      * @memberof NodeRPCsApibootstrap
      */
-    bootstrapRequest?: BootstrapRequest
+    BootstrapRequest?: BootstrapRequest
 }
 
 export interface NodeRPCsApiBootstrapAnyRequest {
@@ -339,7 +339,7 @@ export interface NodeRPCsApiBootstrapAnyRequest {
      * @type BootstrapAnyRequest
      * @memberof NodeRPCsApibootstrapAny
      */
-    bootstrapAnyRequest?: BootstrapAnyRequest
+    BootstrapAnyRequest?: BootstrapAnyRequest
 }
 
 export interface NodeRPCsApiBootstrapLazyRequest {
@@ -348,7 +348,7 @@ export interface NodeRPCsApiBootstrapLazyRequest {
      * @type BootstrapLazyRequest
      * @memberof NodeRPCsApibootstrapLazy
      */
-    bootstrapLazyRequest?: BootstrapLazyRequest
+    BootstrapLazyRequest?: BootstrapLazyRequest
 }
 
 export interface NodeRPCsApiChainRequest {
@@ -357,7 +357,7 @@ export interface NodeRPCsApiChainRequest {
      * @type ChainRequest
      * @memberof NodeRPCsApichain
      */
-    chainRequest?: ChainRequest
+    ChainRequest?: ChainRequest
 }
 
 export interface NodeRPCsApiConfirmationActiveRequest {
@@ -366,7 +366,7 @@ export interface NodeRPCsApiConfirmationActiveRequest {
      * @type ConfirmationActiveRequest
      * @memberof NodeRPCsApiconfirmationActive
      */
-    confirmationActiveRequest?: ConfirmationActiveRequest
+    ConfirmationActiveRequest?: ConfirmationActiveRequest
 }
 
 export interface NodeRPCsApiConfirmationHistoryRequest {
@@ -375,7 +375,7 @@ export interface NodeRPCsApiConfirmationHistoryRequest {
      * @type ConfirmationHistoryRequest
      * @memberof NodeRPCsApiconfirmationHistory
      */
-    confirmationHistoryRequest?: ConfirmationHistoryRequest
+    ConfirmationHistoryRequest?: ConfirmationHistoryRequest
 }
 
 export interface NodeRPCsApiConfirmationInfoRequest {
@@ -384,7 +384,7 @@ export interface NodeRPCsApiConfirmationInfoRequest {
      * @type ConfirmationInfoRequest
      * @memberof NodeRPCsApiconfirmationInfo
      */
-    confirmationInfoRequest?: ConfirmationInfoRequest
+    ConfirmationInfoRequest?: ConfirmationInfoRequest
 }
 
 export interface NodeRPCsApiKeyCreateRequest {
@@ -393,7 +393,7 @@ export interface NodeRPCsApiKeyCreateRequest {
      * @type KeyCreateRequest
      * @memberof NodeRPCsApikeyCreate
      */
-    keyCreateRequest?: KeyCreateRequest
+    KeyCreateRequest?: KeyCreateRequest
 }
 
 export interface NodeRPCsApiKeyExpandRequest {
@@ -402,7 +402,7 @@ export interface NodeRPCsApiKeyExpandRequest {
      * @type KeyExpandRequest
      * @memberof NodeRPCsApikeyExpand
      */
-    keyExpandRequest?: KeyExpandRequest
+    KeyExpandRequest?: KeyExpandRequest
 }
 
 export interface NodeRPCsApiPendingRequest {
@@ -411,7 +411,7 @@ export interface NodeRPCsApiPendingRequest {
      * @type PendingRequest
      * @memberof NodeRPCsApipending
      */
-    pendingRequest?: PendingRequest
+    PendingRequest?: PendingRequest
 }
 
 export interface NodeRPCsApiProcessRequest {
@@ -420,7 +420,7 @@ export interface NodeRPCsApiProcessRequest {
      * @type ProcessRequest
      * @memberof NodeRPCsApiprocess
      */
-    processRequest?: ProcessRequest
+    ProcessRequest?: ProcessRequest
 }
 
 export interface NodeRPCsApiWorkGenerateRequest {
@@ -429,7 +429,7 @@ export interface NodeRPCsApiWorkGenerateRequest {
      * @type WorkGenerateRequest
      * @memberof NodeRPCsApiworkGenerate
      */
-    workGenerateRequest?: WorkGenerateRequest
+    WorkGenerateRequest?: WorkGenerateRequest
 }
 
 
@@ -445,7 +445,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountBalance(param: NodeRPCsApiAccountBalanceRequest, options?: Configuration): Promise<AccountBalanceResponse> {
-        return this.api.accountBalance(param.accountBalanceRequest,  options).toPromise();
+        return this.api.accountBalance(param.AccountBalanceRequest,  options).toPromise();
     }
 	
     /**
@@ -453,7 +453,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountBlockCount(param: NodeRPCsApiAccountBlockCountRequest, options?: Configuration): Promise<AccountBlockCountResponse> {
-        return this.api.accountBlockCount(param.accountBlockCountRequest,  options).toPromise();
+        return this.api.accountBlockCount(param.AccountBlockCountRequest,  options).toPromise();
     }
 	
     /**
@@ -461,7 +461,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountGet(param: NodeRPCsApiAccountGetRequest, options?: Configuration): Promise<AccountGetResponse> {
-        return this.api.accountGet(param.accountGetRequest,  options).toPromise();
+        return this.api.accountGet(param.AccountGetRequest,  options).toPromise();
     }
 	
     /**
@@ -469,7 +469,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountHistory(param: NodeRPCsApiAccountHistoryRequest, options?: Configuration): Promise<AccountHistoryResponse> {
-        return this.api.accountHistory(param.accountHistoryRequest,  options).toPromise();
+        return this.api.accountHistory(param.AccountHistoryRequest,  options).toPromise();
     }
 	
     /**
@@ -477,7 +477,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountInfo(param: NodeRPCsApiAccountInfoRequest, options?: Configuration): Promise<AccountInfoResponse> {
-        return this.api.accountInfo(param.accountInfoRequest,  options).toPromise();
+        return this.api.accountInfo(param.AccountInfoRequest,  options).toPromise();
     }
 	
     /**
@@ -485,7 +485,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountKey(param: NodeRPCsApiAccountKeyRequest, options?: Configuration): Promise<AccountKeyResponse> {
-        return this.api.accountKey(param.accountKeyRequest,  options).toPromise();
+        return this.api.accountKey(param.AccountKeyRequest,  options).toPromise();
     }
 	
     /**
@@ -493,7 +493,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountRepresentative(param: NodeRPCsApiAccountRepresentativeRequest, options?: Configuration): Promise<AccountRepresentativeResponse> {
-        return this.api.accountRepresentative(param.accountRepresentativeRequest,  options).toPromise();
+        return this.api.accountRepresentative(param.AccountRepresentativeRequest,  options).toPromise();
     }
 	
     /**
@@ -501,7 +501,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountWeight(param: NodeRPCsApiAccountWeightRequest, options?: Configuration): Promise<AccountWeightResponse> {
-        return this.api.accountWeight(param.accountWeightRequest,  options).toPromise();
+        return this.api.accountWeight(param.AccountWeightRequest,  options).toPromise();
     }
 	
     /**
@@ -509,7 +509,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountsBalances(param: NodeRPCsApiAccountsBalancesRequest, options?: Configuration): Promise<AccountsBalancesResponse> {
-        return this.api.accountsBalances(param.accountsBalancesRequest,  options).toPromise();
+        return this.api.accountsBalances(param.AccountsBalancesRequest,  options).toPromise();
     }
 	
     /**
@@ -517,7 +517,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountsFrontiers(param: NodeRPCsApiAccountsFrontiersRequest, options?: Configuration): Promise<AccountsFrontiersResponse> {
-        return this.api.accountsFrontiers(param.accountsFrontiersRequest,  options).toPromise();
+        return this.api.accountsFrontiers(param.AccountsFrontiersRequest,  options).toPromise();
     }
 	
     /**
@@ -525,7 +525,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public accountsPending(param: NodeRPCsApiAccountsPendingRequest, options?: Configuration): Promise<AccountsPendingResponse> {
-        return this.api.accountsPending(param.accountsPendingRequest,  options).toPromise();
+        return this.api.accountsPending(param.AccountsPendingRequest,  options).toPromise();
     }
 	
     /**
@@ -533,7 +533,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public activeDifficulty(param: NodeRPCsApiActiveDifficultyRequest, options?: Configuration): Promise<ActiveDifficultyResponse> {
-        return this.api.activeDifficulty(param.activeDifficultyRequest,  options).toPromise();
+        return this.api.activeDifficulty(param.ActiveDifficultyRequest,  options).toPromise();
     }
 	
     /**
@@ -541,7 +541,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public availableSupply(param: NodeRPCsApiAvailableSupplyRequest, options?: Configuration): Promise<AvailableSupplyResponse> {
-        return this.api.availableSupply(param.availableSupplyRequest,  options).toPromise();
+        return this.api.availableSupply(param.AvailableSupplyRequest,  options).toPromise();
     }
 	
     /**
@@ -549,7 +549,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blockAccount(param: NodeRPCsApiBlockAccountRequest, options?: Configuration): Promise<BlockAccountResponse> {
-        return this.api.blockAccount(param.blockAccountRequest,  options).toPromise();
+        return this.api.blockAccount(param.BlockAccountRequest,  options).toPromise();
     }
 	
     /**
@@ -557,7 +557,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blockConfirm(param: NodeRPCsApiBlockConfirmRequest, options?: Configuration): Promise<BlockConfirmResponse> {
-        return this.api.blockConfirm(param.blockConfirmRequest,  options).toPromise();
+        return this.api.blockConfirm(param.BlockConfirmRequest,  options).toPromise();
     }
 	
     /**
@@ -565,7 +565,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blockCount(param: NodeRPCsApiBlockCountRequest, options?: Configuration): Promise<BlockCountResponse> {
-        return this.api.blockCount(param.blockCountRequest,  options).toPromise();
+        return this.api.blockCount(param.BlockCountRequest,  options).toPromise();
     }
 	
     /**
@@ -573,7 +573,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blockCountType(param: NodeRPCsApiBlockCountTypeRequest, options?: Configuration): Promise<BlockCountTypeResponse> {
-        return this.api.blockCountType(param.blockCountTypeRequest,  options).toPromise();
+        return this.api.blockCountType(param.BlockCountTypeRequest,  options).toPromise();
     }
 	
     /**
@@ -581,7 +581,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blockCreate(param: NodeRPCsApiBlockCreateRequest, options?: Configuration): Promise<BlockCreateResponse> {
-        return this.api.blockCreate(param.blockCreateRequest,  options).toPromise();
+        return this.api.blockCreate(param.BlockCreateRequest,  options).toPromise();
     }
 	
     /**
@@ -589,7 +589,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blockHash(param: NodeRPCsApiBlockHashRequest, options?: Configuration): Promise<BlockHashResponse> {
-        return this.api.blockHash(param.blockHashRequest,  options).toPromise();
+        return this.api.blockHash(param.BlockHashRequest,  options).toPromise();
     }
 	
     /**
@@ -597,7 +597,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blockInfo(param: NodeRPCsApiBlockInfoRequest, options?: Configuration): Promise<BlockInfoResponse> {
-        return this.api.blockInfo(param.blockInfoRequest,  options).toPromise();
+        return this.api.blockInfo(param.BlockInfoRequest,  options).toPromise();
     }
 	
     /**
@@ -605,7 +605,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blocks(param: NodeRPCsApiBlocksRequest, options?: Configuration): Promise<BlocksResponse> {
-        return this.api.blocks(param.blocksRequest,  options).toPromise();
+        return this.api.blocks(param.BlocksRequest,  options).toPromise();
     }
 	
     /**
@@ -613,7 +613,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public blocksInfo(param: NodeRPCsApiBlocksInfoRequest, options?: Configuration): Promise<BlocksInfoResponse> {
-        return this.api.blocksInfo(param.blocksInfoRequest,  options).toPromise();
+        return this.api.blocksInfo(param.BlocksInfoRequest,  options).toPromise();
     }
 	
     /**
@@ -621,7 +621,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public bootstrap(param: NodeRPCsApiBootstrapRequest, options?: Configuration): Promise<BootstrapResponse> {
-        return this.api.bootstrap(param.bootstrapRequest,  options).toPromise();
+        return this.api.bootstrap(param.BootstrapRequest,  options).toPromise();
     }
 	
     /**
@@ -629,7 +629,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public bootstrapAny(param: NodeRPCsApiBootstrapAnyRequest, options?: Configuration): Promise<BootstrapAnyResponse> {
-        return this.api.bootstrapAny(param.bootstrapAnyRequest,  options).toPromise();
+        return this.api.bootstrapAny(param.BootstrapAnyRequest,  options).toPromise();
     }
 	
     /**
@@ -637,7 +637,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public bootstrapLazy(param: NodeRPCsApiBootstrapLazyRequest, options?: Configuration): Promise<BootstrapLazyResponse> {
-        return this.api.bootstrapLazy(param.bootstrapLazyRequest,  options).toPromise();
+        return this.api.bootstrapLazy(param.BootstrapLazyRequest,  options).toPromise();
     }
 	
     /**
@@ -645,7 +645,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public chain(param: NodeRPCsApiChainRequest, options?: Configuration): Promise<ChainResponse> {
-        return this.api.chain(param.chainRequest,  options).toPromise();
+        return this.api.chain(param.ChainRequest,  options).toPromise();
     }
 	
     /**
@@ -653,7 +653,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public confirmationActive(param: NodeRPCsApiConfirmationActiveRequest, options?: Configuration): Promise<ConfirmationActiveResponse> {
-        return this.api.confirmationActive(param.confirmationActiveRequest,  options).toPromise();
+        return this.api.confirmationActive(param.ConfirmationActiveRequest,  options).toPromise();
     }
 	
     /**
@@ -661,7 +661,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public confirmationHistory(param: NodeRPCsApiConfirmationHistoryRequest, options?: Configuration): Promise<ConfirmationHistoryResponse> {
-        return this.api.confirmationHistory(param.confirmationHistoryRequest,  options).toPromise();
+        return this.api.confirmationHistory(param.ConfirmationHistoryRequest,  options).toPromise();
     }
 	
     /**
@@ -669,7 +669,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public confirmationInfo(param: NodeRPCsApiConfirmationInfoRequest, options?: Configuration): Promise<ConfirmationInfoResponse> {
-        return this.api.confirmationInfo(param.confirmationInfoRequest,  options).toPromise();
+        return this.api.confirmationInfo(param.ConfirmationInfoRequest,  options).toPromise();
     }
 	
     /**
@@ -677,7 +677,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public keyCreate(param: NodeRPCsApiKeyCreateRequest, options?: Configuration): Promise<KeyCreateResponse> {
-        return this.api.keyCreate(param.keyCreateRequest,  options).toPromise();
+        return this.api.keyCreate(param.KeyCreateRequest,  options).toPromise();
     }
 	
     /**
@@ -685,7 +685,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public keyExpand(param: NodeRPCsApiKeyExpandRequest, options?: Configuration): Promise<KeyExpandResponse> {
-        return this.api.keyExpand(param.keyExpandRequest,  options).toPromise();
+        return this.api.keyExpand(param.KeyExpandRequest,  options).toPromise();
     }
 	
     /**
@@ -693,7 +693,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public pending(param: NodeRPCsApiPendingRequest, options?: Configuration): Promise<PendingResponse> {
-        return this.api.pending(param.pendingRequest,  options).toPromise();
+        return this.api.pending(param.PendingRequest,  options).toPromise();
     }
 	
     /**
@@ -701,7 +701,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public process(param: NodeRPCsApiProcessRequest, options?: Configuration): Promise<ProcessResponse> {
-        return this.api.process(param.processRequest,  options).toPromise();
+        return this.api.process(param.ProcessRequest,  options).toPromise();
     }
 	
     /**
@@ -709,7 +709,7 @@ export class ObjectNodeRPCsApi {
      * @param param the request object
      */
     public workGenerate(param: NodeRPCsApiWorkGenerateRequest, options?: Configuration): Promise<WorkGenerateResponse> {
-        return this.api.workGenerate(param.workGenerateRequest,  options).toPromise();
+        return this.api.workGenerate(param.WorkGenerateRequest,  options).toPromise();
     }
 	
 
@@ -727,7 +727,7 @@ export interface WalletApiAccountsCreateRequest {
      * @type AccountsCreateRequest
      * @memberof WalletApiaccountsCreate
      */
-    accountsCreateRequest?: AccountsCreateRequest
+    AccountsCreateRequest?: AccountsCreateRequest
 }
 
 export interface WalletApiReceiveRequest {
@@ -736,7 +736,7 @@ export interface WalletApiReceiveRequest {
      * @type ReceiveRequest
      * @memberof WalletApireceive
      */
-    receiveRequest?: ReceiveRequest
+    ReceiveRequest?: ReceiveRequest
 }
 
 export interface WalletApiWalletCreateRequest {
@@ -745,7 +745,7 @@ export interface WalletApiWalletCreateRequest {
      * @type WalletCreateRequest
      * @memberof WalletApiwalletCreate
      */
-    walletCreateRequest?: WalletCreateRequest
+    WalletCreateRequest?: WalletCreateRequest
 }
 
 
@@ -761,7 +761,7 @@ export class ObjectWalletApi {
      * @param param the request object
      */
     public accountsCreate(param: WalletApiAccountsCreateRequest, options?: Configuration): Promise<AccountsCreateResponse> {
-        return this.api.accountsCreate(param.accountsCreateRequest,  options).toPromise();
+        return this.api.accountsCreate(param.AccountsCreateRequest,  options).toPromise();
     }
 	
     /**
@@ -769,7 +769,7 @@ export class ObjectWalletApi {
      * @param param the request object
      */
     public receive(param: WalletApiReceiveRequest, options?: Configuration): Promise<ReceiveResponse> {
-        return this.api.receive(param.receiveRequest,  options).toPromise();
+        return this.api.receive(param.ReceiveRequest,  options).toPromise();
     }
 	
     /**
@@ -777,7 +777,7 @@ export class ObjectWalletApi {
      * @param param the request object
      */
     public walletCreate(param: WalletApiWalletCreateRequest, options?: Configuration): Promise<WalletCreateResponse> {
-        return this.api.walletCreate(param.walletCreateRequest,  options).toPromise();
+        return this.api.walletCreate(param.WalletCreateRequest,  options).toPromise();
     }
 	
 

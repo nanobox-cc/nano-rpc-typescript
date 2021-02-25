@@ -16,9 +16,9 @@ export class DebugApiRequestFactory extends BaseAPIRequestFactory {
 	
     /**
      * _version 19.0+_  Returns the hash of the block which is having the confirmation height set for, error otherwise. When a block is being confirmed, it must confirm all blocks in the chain below and iteratively follow all receive blocks. This can take a long time, so it can be useful to find which block was the original being confirmed. 
-     * @param confirmationHeightCurrentlyProcessingRequest 
+     * @param ConfirmationHeightCurrentlyProcessingRequest 
      */
-    public async confirmationHeightCurrentlyProcessing(confirmationHeightCurrentlyProcessingRequest?: ConfirmationHeightCurrentlyProcessingRequest, options?: Configuration): Promise<RequestContext> {
+    public async confirmationHeightCurrentlyProcessing(ConfirmationHeightCurrentlyProcessingRequest?: ConfirmationHeightCurrentlyProcessingRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -42,7 +42,7 @@ export class DebugApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(confirmationHeightCurrentlyProcessingRequest, "ConfirmationHeightCurrentlyProcessingRequest", ""),
+            ObjectSerializer.serialize(ConfirmationHeightCurrentlyProcessingRequest, "ConfirmationHeightCurrentlyProcessingRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);

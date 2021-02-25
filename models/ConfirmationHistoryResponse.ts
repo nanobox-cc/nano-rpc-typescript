@@ -15,14 +15,14 @@ import { ConfirmationHistoryResponseConfirmationStats } from './ConfirmationHist
 import { HttpFile } from '../http/http';
 
 export class ConfirmationHistoryResponse {
-    'confirmationStats'?: ConfirmationHistoryResponseConfirmationStats;
+    'confirmation_stats'?: ConfirmationHistoryResponseConfirmationStats;
     'confirmations'?: Array<Confirmation>;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "confirmationStats",
+            "name": "confirmation_stats",
             "baseName": "confirmation_stats",
             "type": "ConfirmationHistoryResponseConfirmationStats",
             "format": ""

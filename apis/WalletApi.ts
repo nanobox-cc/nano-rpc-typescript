@@ -20,9 +20,9 @@ export class WalletApiRequestFactory extends BaseAPIRequestFactory {
 	
     /**
      * Creates new accounts, insert next deterministic keys in wallet up to count
-     * @param accountsCreateRequest 
+     * @param AccountsCreateRequest 
      */
-    public async accountsCreate(accountsCreateRequest?: AccountsCreateRequest, options?: Configuration): Promise<RequestContext> {
+    public async accountsCreate(AccountsCreateRequest?: AccountsCreateRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -46,7 +46,7 @@ export class WalletApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(accountsCreateRequest, "AccountsCreateRequest", ""),
+            ObjectSerializer.serialize(AccountsCreateRequest, "AccountsCreateRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -63,9 +63,9 @@ export class WalletApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Receive pending block for account in wallet
-     * @param receiveRequest 
+     * @param ReceiveRequest 
      */
-    public async receive(receiveRequest?: ReceiveRequest, options?: Configuration): Promise<RequestContext> {
+    public async receive(ReceiveRequest?: ReceiveRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -89,7 +89,7 @@ export class WalletApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(receiveRequest, "ReceiveRequest", ""),
+            ObjectSerializer.serialize(ReceiveRequest, "ReceiveRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -106,9 +106,9 @@ export class WalletApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
      * Creates a new random wallet id
-     * @param walletCreateRequest 
+     * @param WalletCreateRequest 
      */
-    public async walletCreate(walletCreateRequest?: WalletCreateRequest, options?: Configuration): Promise<RequestContext> {
+    public async walletCreate(WalletCreateRequest?: WalletCreateRequest, options?: Configuration): Promise<RequestContext> {
 		let config = options || this.configuration;
 		
 		
@@ -132,7 +132,7 @@ export class WalletApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(walletCreateRequest, "WalletCreateRequest", ""),
+            ObjectSerializer.serialize(WalletCreateRequest, "WalletCreateRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);

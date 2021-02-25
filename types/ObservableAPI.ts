@@ -109,10 +109,10 @@ export class ObservableDebugApi {
 
     /**
      * _version 19.0+_  Returns the hash of the block which is having the confirmation height set for, error otherwise. When a block is being confirmed, it must confirm all blocks in the chain below and iteratively follow all receive blocks. This can take a long time, so it can be useful to find which block was the original being confirmed. 
-     * @param confirmationHeightCurrentlyProcessingRequest 
+     * @param ConfirmationHeightCurrentlyProcessingRequest 
      */
-    public confirmationHeightCurrentlyProcessing(confirmationHeightCurrentlyProcessingRequest?: ConfirmationHeightCurrentlyProcessingRequest, options?: Configuration): Observable<ConfirmationHeightCurrentlyProcessingResponse> {
-    	const requestContextPromise = this.requestFactory.confirmationHeightCurrentlyProcessing(confirmationHeightCurrentlyProcessingRequest, options);
+    public confirmationHeightCurrentlyProcessing(ConfirmationHeightCurrentlyProcessingRequest?: ConfirmationHeightCurrentlyProcessingRequest, options?: Configuration): Observable<ConfirmationHeightCurrentlyProcessingResponse> {
+    	const requestContextPromise = this.requestFactory.confirmationHeightCurrentlyProcessing(ConfirmationHeightCurrentlyProcessingRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -154,10 +154,10 @@ export class ObservableNodeRPCsApi {
 
     /**
      * Returns how many RAW is owned and how many have not yet been received by **account** > This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountBalanceRequest 
+     * @param AccountBalanceRequest 
      */
-    public accountBalance(accountBalanceRequest?: AccountBalanceRequest, options?: Configuration): Observable<AccountBalanceResponse> {
-    	const requestContextPromise = this.requestFactory.accountBalance(accountBalanceRequest, options);
+    public accountBalance(AccountBalanceRequest?: AccountBalanceRequest, options?: Configuration): Observable<AccountBalanceResponse> {
+    	const requestContextPromise = this.requestFactory.accountBalance(AccountBalanceRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -177,10 +177,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Get number of blocks for a specific account
-     * @param accountBlockCountRequest 
+     * @param AccountBlockCountRequest 
      */
-    public accountBlockCount(accountBlockCountRequest?: AccountBlockCountRequest, options?: Configuration): Observable<AccountBlockCountResponse> {
-    	const requestContextPromise = this.requestFactory.accountBlockCount(accountBlockCountRequest, options);
+    public accountBlockCount(AccountBlockCountRequest?: AccountBlockCountRequest, options?: Configuration): Observable<AccountBlockCountResponse> {
+    	const requestContextPromise = this.requestFactory.accountBlockCount(AccountBlockCountRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -200,10 +200,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Get account for the public key
-     * @param accountGetRequest 
+     * @param AccountGetRequest 
      */
-    public accountGet(accountGetRequest?: AccountGetRequest, options?: Configuration): Observable<AccountGetResponse> {
-    	const requestContextPromise = this.requestFactory.accountGet(accountGetRequest, options);
+    public accountGet(AccountGetRequest?: AccountGetRequest, options?: Configuration): Observable<AccountGetResponse> {
+    	const requestContextPromise = this.requestFactory.accountGet(AccountGetRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -223,10 +223,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Gets the account history. Reports send/receive information for an account. 
-     * @param accountHistoryRequest 
+     * @param AccountHistoryRequest 
      */
-    public accountHistory(accountHistoryRequest?: AccountHistoryRequest, options?: Configuration): Observable<AccountHistoryResponse> {
-    	const requestContextPromise = this.requestFactory.accountHistory(accountHistoryRequest, options);
+    public accountHistory(AccountHistoryRequest?: AccountHistoryRequest, options?: Configuration): Observable<AccountHistoryResponse> {
+    	const requestContextPromise = this.requestFactory.accountHistory(AccountHistoryRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -246,10 +246,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns frontier, open block, change representative block, balance, last modified timestamp from local database & block count for **account**. Only works for accounts that have an entry on the ledger, will return _Account not found_ otherwise. 
-     * @param accountInfoRequest 
+     * @param AccountInfoRequest 
      */
-    public accountInfo(accountInfoRequest?: AccountInfoRequest, options?: Configuration): Observable<AccountInfoResponse> {
-    	const requestContextPromise = this.requestFactory.accountInfo(accountInfoRequest, options);
+    public accountInfo(AccountInfoRequest?: AccountInfoRequest, options?: Configuration): Observable<AccountInfoResponse> {
+    	const requestContextPromise = this.requestFactory.accountInfo(AccountInfoRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -269,10 +269,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Get the public key for **account** 
-     * @param accountKeyRequest 
+     * @param AccountKeyRequest 
      */
-    public accountKey(accountKeyRequest?: AccountKeyRequest, options?: Configuration): Observable<AccountKeyResponse> {
-    	const requestContextPromise = this.requestFactory.accountKey(accountKeyRequest, options);
+    public accountKey(AccountKeyRequest?: AccountKeyRequest, options?: Configuration): Observable<AccountKeyResponse> {
+    	const requestContextPromise = this.requestFactory.accountKey(AccountKeyRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -292,10 +292,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns the representative for **account** 
-     * @param accountRepresentativeRequest 
+     * @param AccountRepresentativeRequest 
      */
-    public accountRepresentative(accountRepresentativeRequest?: AccountRepresentativeRequest, options?: Configuration): Observable<AccountRepresentativeResponse> {
-    	const requestContextPromise = this.requestFactory.accountRepresentative(accountRepresentativeRequest, options);
+    public accountRepresentative(AccountRepresentativeRequest?: AccountRepresentativeRequest, options?: Configuration): Observable<AccountRepresentativeResponse> {
+    	const requestContextPromise = this.requestFactory.accountRepresentative(AccountRepresentativeRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -315,10 +315,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns the voting weight for **account** 
-     * @param accountWeightRequest 
+     * @param AccountWeightRequest 
      */
-    public accountWeight(accountWeightRequest?: AccountWeightRequest, options?: Configuration): Observable<AccountWeightResponse> {
-    	const requestContextPromise = this.requestFactory.accountWeight(accountWeightRequest, options);
+    public accountWeight(AccountWeightRequest?: AccountWeightRequest, options?: Configuration): Observable<AccountWeightResponse> {
+    	const requestContextPromise = this.requestFactory.accountWeight(AccountWeightRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -338,10 +338,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns how many RAW is owned and how many have not yet been received by **accounts list**  This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountsBalancesRequest 
+     * @param AccountsBalancesRequest 
      */
-    public accountsBalances(accountsBalancesRequest?: AccountsBalancesRequest, options?: Configuration): Observable<AccountsBalancesResponse> {
-    	const requestContextPromise = this.requestFactory.accountsBalances(accountsBalancesRequest, options);
+    public accountsBalances(AccountsBalancesRequest?: AccountsBalancesRequest, options?: Configuration): Observable<AccountsBalancesResponse> {
+    	const requestContextPromise = this.requestFactory.accountsBalances(AccountsBalancesRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -361,10 +361,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns a list of pairs of account and block hash representing the head block for **accounts list**  This call may return results that include unconfirmed blocks, so it should not be used in any processes or integrations requiring only details from blocks confirmed by the network. 
-     * @param accountsFrontiersRequest 
+     * @param AccountsFrontiersRequest 
      */
-    public accountsFrontiers(accountsFrontiersRequest?: AccountsFrontiersRequest, options?: Configuration): Observable<AccountsFrontiersResponse> {
-    	const requestContextPromise = this.requestFactory.accountsFrontiers(accountsFrontiersRequest, options);
+    public accountsFrontiers(AccountsFrontiersRequest?: AccountsFrontiersRequest, options?: Configuration): Observable<AccountsFrontiersResponse> {
+    	const requestContextPromise = this.requestFactory.accountsFrontiers(AccountsFrontiersRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -384,10 +384,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns a list of block hashes which have not yet been received by these accounts
-     * @param accountsPendingRequest 
+     * @param AccountsPendingRequest 
      */
-    public accountsPending(accountsPendingRequest?: AccountsPendingRequest, options?: Configuration): Observable<AccountsPendingResponse> {
-    	const requestContextPromise = this.requestFactory.accountsPending(accountsPendingRequest, options);
+    public accountsPending(AccountsPendingRequest?: AccountsPendingRequest, options?: Configuration): Observable<AccountsPendingResponse> {
+    	const requestContextPromise = this.requestFactory.accountsPending(AccountsPendingRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -407,10 +407,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns the difficulty values (16 hexadecimal digits string, 64 bit) for the minimum required on the network (network_minimum) as well as the current active difficulty seen on the network (network_current, 5 minute trended average of adjusted difficulty seen on confirmed transactions) which can be used to perform rework for better prioritization of transaction processing. A multiplier of the network_current from the base difficulty of network_minimum is also provided for comparison. 
-     * @param activeDifficultyRequest 
+     * @param ActiveDifficultyRequest 
      */
-    public activeDifficulty(activeDifficultyRequest?: ActiveDifficultyRequest, options?: Configuration): Observable<ActiveDifficultyResponse> {
-    	const requestContextPromise = this.requestFactory.activeDifficulty(activeDifficultyRequest, options);
+    public activeDifficulty(ActiveDifficultyRequest?: ActiveDifficultyRequest, options?: Configuration): Observable<ActiveDifficultyResponse> {
+    	const requestContextPromise = this.requestFactory.activeDifficulty(ActiveDifficultyRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -430,10 +430,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns how many raw are in the public supply 
-     * @param availableSupplyRequest 
+     * @param AvailableSupplyRequest 
      */
-    public availableSupply(availableSupplyRequest?: AvailableSupplyRequest, options?: Configuration): Observable<AvailableSupplyResponse> {
-    	const requestContextPromise = this.requestFactory.availableSupply(availableSupplyRequest, options);
+    public availableSupply(AvailableSupplyRequest?: AvailableSupplyRequest, options?: Configuration): Observable<AvailableSupplyResponse> {
+    	const requestContextPromise = this.requestFactory.availableSupply(AvailableSupplyRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -453,10 +453,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns the account containing block 
-     * @param blockAccountRequest 
+     * @param BlockAccountRequest 
      */
-    public blockAccount(blockAccountRequest?: BlockAccountRequest, options?: Configuration): Observable<BlockAccountResponse> {
-    	const requestContextPromise = this.requestFactory.blockAccount(blockAccountRequest, options);
+    public blockAccount(BlockAccountRequest?: BlockAccountRequest, options?: Configuration): Observable<BlockAccountResponse> {
+    	const requestContextPromise = this.requestFactory.blockAccount(BlockAccountRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -476,10 +476,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Request confirmation for **block** from known online representative nodes. Check results with confirmation history. 
-     * @param blockConfirmRequest 
+     * @param BlockConfirmRequest 
      */
-    public blockConfirm(blockConfirmRequest?: BlockConfirmRequest, options?: Configuration): Observable<BlockConfirmResponse> {
-    	const requestContextPromise = this.requestFactory.blockConfirm(blockConfirmRequest, options);
+    public blockConfirm(BlockConfirmRequest?: BlockConfirmRequest, options?: Configuration): Observable<BlockConfirmResponse> {
+    	const requestContextPromise = this.requestFactory.blockConfirm(BlockConfirmRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -499,10 +499,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Reports the number of blocks in the ledger and unchecked synchronizing blocks. 
-     * @param blockCountRequest 
+     * @param BlockCountRequest 
      */
-    public blockCount(blockCountRequest?: BlockCountRequest, options?: Configuration): Observable<BlockCountResponse> {
-    	const requestContextPromise = this.requestFactory.blockCount(blockCountRequest, options);
+    public blockCount(BlockCountRequest?: BlockCountRequest, options?: Configuration): Observable<BlockCountResponse> {
+    	const requestContextPromise = this.requestFactory.blockCount(BlockCountRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -522,10 +522,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Reports the number of blocks in the ledger by type (send, receive, open, change, state with version) 
-     * @param blockCountTypeRequest 
+     * @param BlockCountTypeRequest 
      */
-    public blockCountType(blockCountTypeRequest?: BlockCountTypeRequest, options?: Configuration): Observable<BlockCountTypeResponse> {
-    	const requestContextPromise = this.requestFactory.blockCountType(blockCountTypeRequest, options);
+    public blockCountType(BlockCountTypeRequest?: BlockCountTypeRequest, options?: Configuration): Observable<BlockCountTypeResponse> {
+    	const requestContextPromise = this.requestFactory.blockCountType(BlockCountTypeRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -545,10 +545,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Creates a json representations of new block based on input data & signed with **private key** or **account** in **wallet**. Use for offline signing. 
-     * @param blockCreateRequest 
+     * @param BlockCreateRequest 
      */
-    public blockCreate(blockCreateRequest?: BlockCreateRequest, options?: Configuration): Observable<BlockCreateResponse> {
-    	const requestContextPromise = this.requestFactory.blockCreate(blockCreateRequest, options);
+    public blockCreate(BlockCreateRequest?: BlockCreateRequest, options?: Configuration): Observable<BlockCreateResponse> {
+    	const requestContextPromise = this.requestFactory.blockCreate(BlockCreateRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -568,10 +568,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returning block hash for given block content. Using the optional **json_block** is recommended since v19.0. 
-     * @param blockHashRequest 
+     * @param BlockHashRequest 
      */
-    public blockHash(blockHashRequest?: BlockHashRequest, options?: Configuration): Observable<BlockHashResponse> {
-    	const requestContextPromise = this.requestFactory.blockHash(blockHashRequest, options);
+    public blockHash(BlockHashRequest?: BlockHashRequest, options?: Configuration): Observable<BlockHashResponse> {
+    	const requestContextPromise = this.requestFactory.blockHash(BlockHashRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -591,10 +591,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Retrieves a json representation of the block in `contents` along with:  * _since version 18.0_: `block_account`, transaction `amount`, block `balance`, block `height` in account chain, block local modification `timestamp` * _since version 19.0_: Whether block was `confirmed`, `subtype` (for state blocks) of `send`, `receive`,  `change` or `epoch`  Using the optional `json_block` is recommended since v19.0. 
-     * @param blockInfoRequest 
+     * @param BlockInfoRequest 
      */
-    public blockInfo(blockInfoRequest?: BlockInfoRequest, options?: Configuration): Observable<BlockInfoResponse> {
-    	const requestContextPromise = this.requestFactory.blockInfo(blockInfoRequest, options);
+    public blockInfo(BlockInfoRequest?: BlockInfoRequest, options?: Configuration): Observable<BlockInfoResponse> {
+    	const requestContextPromise = this.requestFactory.blockInfo(BlockInfoRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -614,10 +614,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Retrieves a json representations of **blocks**. 
-     * @param blocksRequest 
+     * @param BlocksRequest 
      */
-    public blocks(blocksRequest?: BlocksRequest, options?: Configuration): Observable<BlocksResponse> {
-    	const requestContextPromise = this.requestFactory.blocks(blocksRequest, options);
+    public blocks(BlocksRequest?: BlocksRequest, options?: Configuration): Observable<BlocksResponse> {
+    	const requestContextPromise = this.requestFactory.blocks(BlocksRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -637,10 +637,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Retrieves a json representations of blocks in contents along with:  * _since version 18.0_: `block_account`, transaction `amount`, block `balance`, block `height` in account chain, block local modification  timestamp * _since version 19.0_: Whether block was `confirmed`, `subtype` (for state blocks) of `send`, `receive`, `change` or `epoch` 
-     * @param blocksInfoRequest 
+     * @param BlocksInfoRequest 
      */
-    public blocksInfo(blocksInfoRequest?: BlocksInfoRequest, options?: Configuration): Observable<BlocksInfoResponse> {
-    	const requestContextPromise = this.requestFactory.blocksInfo(blocksInfoRequest, options);
+    public blocksInfo(BlocksInfoRequest?: BlocksInfoRequest, options?: Configuration): Observable<BlocksInfoResponse> {
+    	const requestContextPromise = this.requestFactory.blocksInfo(BlocksInfoRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -660,10 +660,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Initialize bootstrap to specific **IP address** and **port**. Not compatible with launch flag [--disable_legacy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_legacy_bootstrap) 
-     * @param bootstrapRequest 
+     * @param BootstrapRequest 
      */
-    public bootstrap(bootstrapRequest?: BootstrapRequest, options?: Configuration): Observable<BootstrapResponse> {
-    	const requestContextPromise = this.requestFactory.bootstrap(bootstrapRequest, options);
+    public bootstrap(BootstrapRequest?: BootstrapRequest, options?: Configuration): Observable<BootstrapResponse> {
+    	const requestContextPromise = this.requestFactory.bootstrap(BootstrapRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -683,10 +683,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Initialize multi-connection bootstrap to random peers. Not compatible with launch flag [--disable_legacy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_legacy_bootstrap) 
-     * @param bootstrapAnyRequest 
+     * @param BootstrapAnyRequest 
      */
-    public bootstrapAny(bootstrapAnyRequest?: BootstrapAnyRequest, options?: Configuration): Observable<BootstrapAnyResponse> {
-    	const requestContextPromise = this.requestFactory.bootstrapAny(bootstrapAnyRequest, options);
+    public bootstrapAny(BootstrapAnyRequest?: BootstrapAnyRequest, options?: Configuration): Observable<BootstrapAnyResponse> {
+    	const requestContextPromise = this.requestFactory.bootstrapAny(BootstrapAnyRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -706,10 +706,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * _version 17.0+_  Initialize lazy bootstrap with given block hash. Not compatible with launch flag [--disable_lazy_bootstrap](https://docs.nano.org/commands/command-line-interface/#-disable_lazy_bootstrap) 
-     * @param bootstrapLazyRequest 
+     * @param BootstrapLazyRequest 
      */
-    public bootstrapLazy(bootstrapLazyRequest?: BootstrapLazyRequest, options?: Configuration): Observable<BootstrapLazyResponse> {
-    	const requestContextPromise = this.requestFactory.bootstrapLazy(bootstrapLazyRequest, options);
+    public bootstrapLazy(BootstrapLazyRequest?: BootstrapLazyRequest, options?: Configuration): Observable<BootstrapLazyResponse> {
+    	const requestContextPromise = this.requestFactory.bootstrapLazy(BootstrapLazyRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -729,10 +729,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns a consecutive list of block hashes in the account chain starting at **block** back to **count** (direction from frontier back to open block, from newer blocks to older). Will list all blocks back to the open block of this chain when count is set to \"-1\". The requested block hash is included in the answer. 
-     * @param chainRequest 
+     * @param ChainRequest 
      */
-    public chain(chainRequest?: ChainRequest, options?: Configuration): Observable<ChainResponse> {
-    	const requestContextPromise = this.requestFactory.chain(chainRequest, options);
+    public chain(ChainRequest?: ChainRequest, options?: Configuration): Observable<ChainResponse> {
+    	const requestContextPromise = this.requestFactory.chain(ChainRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -752,10 +752,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * _version 16.0+_  Returns list of active elections roots (excluding stopped & aborted elections). Find info about specific root with confirmation_info  The roots provided are two parts and differ between the first account block and subsequent blocks:  * First account block (open): 0000000000000000000000000000000000000000000000000000000000000000 + account public key * Other blocks: previous hash + previous hash 
-     * @param confirmationActiveRequest 
+     * @param ConfirmationActiveRequest 
      */
-    public confirmationActive(confirmationActiveRequest?: ConfirmationActiveRequest, options?: Configuration): Observable<ConfirmationActiveResponse> {
-    	const requestContextPromise = this.requestFactory.confirmationActive(confirmationActiveRequest, options);
+    public confirmationActive(ConfirmationActiveRequest?: ConfirmationActiveRequest, options?: Configuration): Observable<ConfirmationActiveResponse> {
+    	const requestContextPromise = this.requestFactory.confirmationActive(ConfirmationActiveRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -775,10 +775,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * _version 12.0+_ _duration, time, confirmation_stats: version 17.0+_  Returns hash, tally weight, election duration (in milliseconds), election confirmation timestamp for recent elections winners. Also returns stats: count of elections in history (limited to 2048) & average duration time  With version 19.0+ `confirmation_history_size` can be managed in [config.json](https://docs.nano.org/running-a-node/configuration/#example-file) to adjust the number of elections to be kept in history and returned by this call. Due to timings inside the node, the default 2048 limit will return all confirmations up to traffic levels of  approximately 56 confirmations/sec. To properly track levels above this, increase this value or use the confirmation subscription through the [websocket](https://docs.nano.org/integration-guides/advanced/#websocket-support) instead. 
-     * @param confirmationHistoryRequest 
+     * @param ConfirmationHistoryRequest 
      */
-    public confirmationHistory(confirmationHistoryRequest?: ConfirmationHistoryRequest, options?: Configuration): Observable<ConfirmationHistoryResponse> {
-    	const requestContextPromise = this.requestFactory.confirmationHistory(confirmationHistoryRequest, options);
+    public confirmationHistory(ConfirmationHistoryRequest?: ConfirmationHistoryRequest, options?: Configuration): Observable<ConfirmationHistoryResponse> {
+    	const requestContextPromise = this.requestFactory.confirmationHistory(ConfirmationHistoryRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -798,10 +798,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * _version 16.0+_  Returns info about active election by *root*. Including announcements count, last winner (initially local ledger block), total tally of voted representatives, concurrent blocks with tally & block contents for each. Using the optional `json_block` is recommended since v19.0.  The roots provided are two parts and differ between the first account block and subsequent blocks:  * First account block (open): 0000000000000000000000000000000000000000000000000000000000000000 + account public key * Other blocks: previous hash + previous hash 
-     * @param confirmationInfoRequest 
+     * @param ConfirmationInfoRequest 
      */
-    public confirmationInfo(confirmationInfoRequest?: ConfirmationInfoRequest, options?: Configuration): Observable<ConfirmationInfoResponse> {
-    	const requestContextPromise = this.requestFactory.confirmationInfo(confirmationInfoRequest, options);
+    public confirmationInfo(ConfirmationInfoRequest?: ConfirmationInfoRequest, options?: Configuration): Observable<ConfirmationInfoResponse> {
+    	const requestContextPromise = this.requestFactory.confirmationInfo(ConfirmationInfoRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -821,10 +821,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Generates an **adhoc random** keypair 
-     * @param keyCreateRequest 
+     * @param KeyCreateRequest 
      */
-    public keyCreate(keyCreateRequest?: KeyCreateRequest, options?: Configuration): Observable<KeyCreateResponse> {
-    	const requestContextPromise = this.requestFactory.keyCreate(keyCreateRequest, options);
+    public keyCreate(KeyCreateRequest?: KeyCreateRequest, options?: Configuration): Observable<KeyCreateResponse> {
+    	const requestContextPromise = this.requestFactory.keyCreate(KeyCreateRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -844,10 +844,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Derive public key and account number from **private key** 
-     * @param keyExpandRequest 
+     * @param KeyExpandRequest 
      */
-    public keyExpand(keyExpandRequest?: KeyExpandRequest, options?: Configuration): Observable<KeyExpandResponse> {
-    	const requestContextPromise = this.requestFactory.keyExpand(keyExpandRequest, options);
+    public keyExpand(KeyExpandRequest?: KeyExpandRequest, options?: Configuration): Observable<KeyExpandResponse> {
+    	const requestContextPromise = this.requestFactory.keyExpand(KeyExpandRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -867,10 +867,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Returns a list of block hashes which have not yet been received by this account.  **Optional `include_only_confirmed` recommended**:  By default this will return blocks not in active elections but unconfirmed (e.g., block was received but node was restarted, election was dropped, new ledger with reset confirmation height).  **To avoid potential issues related to these situations setting the include_only_confirmed = true is recommended for most use cases.** 
-     * @param pendingRequest 
+     * @param PendingRequest 
      */
-    public pending(pendingRequest?: PendingRequest, options?: Configuration): Observable<PendingResponse> {
-    	const requestContextPromise = this.requestFactory.pending(pendingRequest, options);
+    public pending(PendingRequest?: PendingRequest, options?: Configuration): Observable<PendingResponse> {
+    	const requestContextPromise = this.requestFactory.pending(PendingRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -890,10 +890,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Publish block to the network
-     * @param processRequest 
+     * @param ProcessRequest 
      */
-    public process(processRequest?: ProcessRequest, options?: Configuration): Observable<ProcessResponse> {
-    	const requestContextPromise = this.requestFactory.process(processRequest, options);
+    public process(ProcessRequest?: ProcessRequest, options?: Configuration): Observable<ProcessResponse> {
+    	const requestContextPromise = this.requestFactory.process(ProcessRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -913,10 +913,10 @@ export class ObservableNodeRPCsApi {
 	
     /**
      * Generates work for block. hash is the frontier of the account or in the case of an open block, the public key representation of the account which can be found with account_key 
-     * @param workGenerateRequest 
+     * @param WorkGenerateRequest 
      */
-    public workGenerate(workGenerateRequest?: WorkGenerateRequest, options?: Configuration): Observable<WorkGenerateResponse> {
-    	const requestContextPromise = this.requestFactory.workGenerate(workGenerateRequest, options);
+    public workGenerate(WorkGenerateRequest?: WorkGenerateRequest, options?: Configuration): Observable<WorkGenerateResponse> {
+    	const requestContextPromise = this.requestFactory.workGenerate(WorkGenerateRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -958,10 +958,10 @@ export class ObservableWalletApi {
 
     /**
      * Creates new accounts, insert next deterministic keys in wallet up to count
-     * @param accountsCreateRequest 
+     * @param AccountsCreateRequest 
      */
-    public accountsCreate(accountsCreateRequest?: AccountsCreateRequest, options?: Configuration): Observable<AccountsCreateResponse> {
-    	const requestContextPromise = this.requestFactory.accountsCreate(accountsCreateRequest, options);
+    public accountsCreate(AccountsCreateRequest?: AccountsCreateRequest, options?: Configuration): Observable<AccountsCreateResponse> {
+    	const requestContextPromise = this.requestFactory.accountsCreate(AccountsCreateRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -981,10 +981,10 @@ export class ObservableWalletApi {
 	
     /**
      * Receive pending block for account in wallet
-     * @param receiveRequest 
+     * @param ReceiveRequest 
      */
-    public receive(receiveRequest?: ReceiveRequest, options?: Configuration): Observable<ReceiveResponse> {
-    	const requestContextPromise = this.requestFactory.receive(receiveRequest, options);
+    public receive(ReceiveRequest?: ReceiveRequest, options?: Configuration): Observable<ReceiveResponse> {
+    	const requestContextPromise = this.requestFactory.receive(ReceiveRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -1004,10 +1004,10 @@ export class ObservableWalletApi {
 	
     /**
      * Creates a new random wallet id
-     * @param walletCreateRequest 
+     * @param WalletCreateRequest 
      */
-    public walletCreate(walletCreateRequest?: WalletCreateRequest, options?: Configuration): Observable<WalletCreateResponse> {
-    	const requestContextPromise = this.requestFactory.walletCreate(walletCreateRequest, options);
+    public walletCreate(WalletCreateRequest?: WalletCreateRequest, options?: Configuration): Observable<WalletCreateResponse> {
+    	const requestContextPromise = this.requestFactory.walletCreate(WalletCreateRequest, options);
 
 		// build promise chain
     let middlewarePreObservable = from<RequestContext>(requestContextPromise);

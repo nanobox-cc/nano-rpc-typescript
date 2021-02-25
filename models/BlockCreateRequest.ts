@@ -18,7 +18,7 @@ export class BlockCreateRequest {
     /**
     * Defaults to `\"false\"`. If `\"true\"`, `\"block\"` contains a JSON subtree instead of a JSON string.
     */
-    'jsonBlock'?: ModelBoolean;
+    'json_block'?: ModelBoolean;
     'type'?: BlockCreateRequestTypeEnum;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
@@ -42,7 +42,7 @@ export class BlockCreateRequest {
             "format": ""
         },
         {
-            "name": "jsonBlock",
+            "name": "json_block",
             "baseName": "json_block",
             "type": "ModelBoolean",
             "format": ""

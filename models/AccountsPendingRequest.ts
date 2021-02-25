@@ -16,7 +16,7 @@ export class AccountsPendingRequest {
     'action'?: AccountsPendingRequestActionEnum;
     'accounts'?: Array<string>;
     'count'?: string;
-    'includeActive'?: boolean;
+    'include_active'?: boolean;
     'source'?: boolean;
 
     static readonly discriminator: string | undefined = undefined;
@@ -41,7 +41,7 @@ export class AccountsPendingRequest {
             "format": ""
         },
         {
-            "name": "includeActive",
+            "name": "include_active",
             "baseName": "include_active",
             "type": "boolean",
             "format": ""
