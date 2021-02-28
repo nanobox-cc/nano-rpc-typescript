@@ -10,21 +10,23 @@
  * Do not edit the class manually.
  */
 
+import { SubType } from './SubType';
 import { HttpFile } from '../http/http';
 
 export class BlockDataJson {
-    'type'?: BlockDataJsonTypeEnum;
-    'account'?: string;
-    'previous'?: string;
-    'representative'?: string;
+    'type': BlockDataJsonTypeEnum;
+    'account': string;
+    'previous': string;
+    'representative': string;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'balance'?: number;
-    'link'?: string;
-    'link_as_account'?: string;
-    'signature'?: string;
-    'work'?: string;
+    'balance': string;
+    'link': string;
+    'link_as_account': string;
+    'signature': string;
+    'work': string;
+    'subtype'?: SubType;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -56,7 +58,7 @@ export class BlockDataJson {
         {
             "name": "balance",
             "baseName": "balance",
-            "type": "number",
+            "type": "string",
             "format": ""
         },
         {
@@ -81,6 +83,12 @@ export class BlockDataJson {
             "name": "work",
             "baseName": "work",
             "type": "string",
+            "format": ""
+        },
+        {
+            "name": "subtype",
+            "baseName": "subtype",
+            "type": "SubType",
             "format": ""
         }    ];
 

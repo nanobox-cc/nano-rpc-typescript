@@ -16,11 +16,11 @@ export class AccountBalanceResponse {
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'balance'?: number;
+    'balance'?: string;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'pending'?: number;
+    'pending'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -28,13 +28,13 @@ export class AccountBalanceResponse {
         {
             "name": "balance",
             "baseName": "balance",
-            "type": "number",
+            "type": "string",
             "format": ""
         },
         {
             "name": "pending",
             "baseName": "pending",
-            "type": "number",
+            "type": "string",
             "format": ""
         }    ];
 

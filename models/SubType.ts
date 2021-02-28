@@ -12,4 +12,4 @@
 
 import { HttpFile } from '../http/http';
 
-export type SubType = "send" | "receive" | "open" | "change" | "epoch" ;
+export type SubType = "send" | "receive" | "change" | "epoch" ;

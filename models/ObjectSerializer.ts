@@ -124,7 +124,7 @@ import { BlockCountTypeRequest, BlockCountTypeRequestActionEnum   } from './Bloc
 import { BlockCountTypeResponse } from './BlockCountTypeResponse';
 import { BlockCreateRequest, BlockCreateRequestActionEnum   , BlockCreateRequestTypeEnum           } from './BlockCreateRequest';
 import { BlockCreateResponse } from './BlockCreateResponse';
-import { BlockDataJson, BlockDataJsonTypeEnum           } from './BlockDataJson';
+import { BlockDataJson, BlockDataJsonTypeEnum            } from './BlockDataJson';
 import { BlockHashRequest, BlockHashRequestActionEnum     } from './BlockHashRequest';
 import { BlockHashResponse } from './BlockHashResponse';
 import { BlockInfo } from './BlockInfo';

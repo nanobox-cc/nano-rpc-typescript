@@ -19,7 +19,7 @@ export class AccountInfoResponse {
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'balance': number;
+    'balance': string;
     'modified_timestamp': string;
     'block_count': string;
     'confirmation_height': string;
@@ -28,11 +28,11 @@ export class AccountInfoResponse {
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'weight'?: number;
+    'weight'?: string;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'pending'?: number;
+    'pending'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -58,7 +58,7 @@ export class AccountInfoResponse {
         {
             "name": "balance",
             "baseName": "balance",
-            "type": "number",
+            "type": "string",
             "format": ""
         },
         {
@@ -94,13 +94,13 @@ export class AccountInfoResponse {
         {
             "name": "weight",
             "baseName": "weight",
-            "type": "number",
+            "type": "string",
             "format": ""
         },
         {
             "name": "pending",
             "baseName": "pending",
-            "type": "number",
+            "type": "string",
             "format": ""
         }    ];
 

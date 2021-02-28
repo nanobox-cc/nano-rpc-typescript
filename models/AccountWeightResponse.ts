@@ -16,7 +16,7 @@ export class AccountWeightResponse {
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'weight'?: number;
+    'weight'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -24,7 +24,7 @@ export class AccountWeightResponse {
         {
             "name": "weight",
             "baseName": "weight",
-            "type": "number",
+            "type": "string",
             "format": ""
         }    ];
 

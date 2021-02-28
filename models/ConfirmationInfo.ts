@@ -17,7 +17,7 @@ export class ConfirmationInfo {
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'tally'?: number;
+    'tally'?: string;
     'contents'?: BlockDataJson;
 
     static readonly discriminator: string | undefined = undefined;
@@ -26,7 +26,7 @@ export class ConfirmationInfo {
         {
             "name": "tally",
             "baseName": "tally",
-            "type": "number",
+            "type": "string",
             "format": ""
         },
         {

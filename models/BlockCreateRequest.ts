@@ -23,7 +23,7 @@ export class BlockCreateRequest {
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'balance'?: number;
+    'balance'?: string;
     'key'?: string;
     'representative'?: string;
     'link'?: string;
@@ -56,7 +56,7 @@ export class BlockCreateRequest {
         {
             "name": "balance",
             "baseName": "balance",
-            "type": "number",
+            "type": "string",
             "format": ""
         },
         {

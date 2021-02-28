@@ -19,11 +19,11 @@ export class BlockInfo {
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'amount'?: number;
+    'amount'?: string;
     /**
     * 1 raw is the smallest possible division and NANO/Nano (Mnano) is the current standard division used in most wallets, on exchanges, etc.
     */
-    'balance'?: number;
+    'balance'?: string;
     'height'?: string;
     'local_timestamp'?: string;
     'confirmed'?: ModelBoolean;
@@ -42,13 +42,13 @@ export class BlockInfo {
         {
             "name": "amount",
             "baseName": "amount",
-            "type": "number",
+            "type": "string",
             "format": ""
         },
         {
             "name": "balance",
             "baseName": "balance",
-            "type": "number",
+            "type": "string",
             "format": ""
         },
         {
