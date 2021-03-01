@@ -14,12 +14,14 @@
   "typings": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "preversion": "yarn prepare",
+    "postversion": "git push --tags && git push"
   },
   "dependencies": {
-    "whatwg-fetch": "^3.0.0",
     "es6-promise": "^4.2.4",
-    "url-parse": "^1.4.3"
+    "url-parse": "^1.4.3",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "typescript": "^3.9.3"
