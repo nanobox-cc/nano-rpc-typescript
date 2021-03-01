@@ -160,7 +160,7 @@ import { KeyExpandRequest, KeyExpandRequestActionEnum    } from './KeyExpandRequ
 import { KeyExpandResponse } from './KeyExpandResponse';
 import { ModelBoolean } from './ModelBoolean';
 import { PendingBlock } from './PendingBlock';
-import { PendingRequest, PendingRequestActionEnum        } from './PendingRequest';
+import { PendingRequest, PendingRequestActionEnum         } from './PendingRequest';
 import { PendingResponse } from './PendingResponse';
 import { ProcessRequest, ProcessRequestActionEnum      } from './ProcessRequest';
 import { ProcessResponse } from './ProcessResponse';

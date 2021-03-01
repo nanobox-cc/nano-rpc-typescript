@@ -29,6 +29,10 @@ export class PendingRequest {
     * _version 19.0+_  Boolean, false by default. Returns a list of pending block hashes with amount and source accounts 
     */
     'source'?: ModelBoolean;
+    /**
+    * _version 8.0+_ Number (128 bit, decimal). Returns a list of pending block hashes with amount more or equal to threshold 
+    */
+    'threshold'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -67,6 +71,12 @@ export class PendingRequest {
             "name": "source",
             "baseName": "source",
             "type": "ModelBoolean",
+            "format": ""
+        },
+        {
+            "name": "threshold",
+            "baseName": "threshold",
+            "type": "string",
             "format": ""
         }    ];
 
